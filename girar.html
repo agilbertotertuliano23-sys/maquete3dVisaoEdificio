@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#333336">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="assets/brand/logo-harness-icon.png?v=1">
+  <title>Imobiliária Harness — Maquete Interativa do Empreendimento</title>
+  <!--
+    MODO HORIZONTAL — SÓ CELULAR. O index.html manda celulares (toque + menor lado da tela <= 600px)
+    para cá; computador e tablet nunca passam por esta página. A maquete roda dentro de um <iframe>
+    que, com o celular em pé, é girado 90°: dentro do iframe a janela é horizontal de verdade, então
+    os media queries, o layout deitado (mobile.css) e as contas de toque/raycast da cena 3D funcionam
+    sem nenhuma adaptação (o navegador entrega o toque ao iframe já nas coordenadas dele).
+    Se o celular for virado de verdade, o iframe volta ao tamanho normal sem recarregar.
+    Para abrir a maquete sem este modo: index.html?sem-girar
+  -->
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #1d1d1f; overscroll-behavior: none; }
+    #maquete {
+      position: fixed; top: 0; left: 0; border: 0; background: #1d1d1f;
+      width: 100vw; height: 100vh; height: 100dvh;
+    }
+    /* celular em pé: o iframe tem largura = altura da tela e altura = largura da tela, e é girado
+       90° (o topo do app vai pra borda direita; vire o celular para a esquerda para ler em pé) */
+    @media (orientation: portrait) {
+      #maquete {
+        width: 100vh; width: 100dvh; height: 100vw;
+        transform-origin: 0 0;
+        transform: translateX(100vw) rotate(90deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <iframe id="maquete" title="Maquete 3D interativa do empreendimento"
+          allow="fullscreen; autoplay; accelerometer; gyroscope" allowfullscreen></iframe>
+  <script>
+    // mantém o que veio na URL (?unidade=…, #…) e marca o iframe para o index.html não redirecionar de novo
+    (function () {
+      var q = location.search ? location.search + '&lado=1' : '?lado=1';
+      document.getElementById('maquete').src = 'index.html' + q + location.hash;
+    })();
+  </script>
+</body>
+</html>
