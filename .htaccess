@@ -1,0 +1,12 @@
+# Cache da maquete (Hostinger / LiteSpeed).
+# Sem isto o servidor manda max-age=7 dias para JS e CSS e quem já abriu o site continua vendo a
+# versão antiga por uma semana. HTML/JS/CSS/manifesto sempre revalidam (ETag: se não mudou, é só um 304
+# barato); imagens, panoramas e modelos 3D, que quase nunca mudam, ficam em cache longo.
+<IfModule mod_headers.c>
+  <FilesMatch "\.(html|js|css|webmanifest)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(webp|png|jpg|jpeg|glb|woff2)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
