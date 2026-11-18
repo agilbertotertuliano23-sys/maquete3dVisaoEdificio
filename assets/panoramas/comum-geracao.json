@@ -1,0 +1,82 @@
+{
+  "generator": "image_gen built-in",
+  "assets": [
+    {
+      "property": "COMUM",
+      "id": "portaria",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Gatehouse at south entrance. Camera inside pedestrian entry looking north into landscaped boulevard with pool and five towers beyond, south back half of panorama access road, concrete canopy, warm wood slats, glazed security kiosk, pedestrian turnstile and two vehicle lanes. Three single-story rental houses on each side of entrance. Beige concrete, wood, glass, royal palms. Wide public entrance without invented extra towers.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-a510fef7-f78a-4ebe-992b-7e47212da366.png",
+      "destination": "assets/panoramas/COMUM/portaria.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "quadra",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Inside western multisport court, orange-and-blue sports surfacing, white basketball and futsal lines, basketball hoops and small goals, dark wire fence and LED poles. Pool and palm boulevard to east, apartment towers north/east, tree belt west. Entire court enclosure 360.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-de84132e-57da-480e-b0cc-37fce229809e.png",
+      "destination": "assets/panoramas/COMUM/quadra.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "academia_ar_livre",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Southwestern outdoor exercise area, stainless and dark grey fitness stations on resilient paving with greenery, timber pergola adjoining south/east, pool boulevard beyond, western court visible. Trees, pale paving, landscaped beds. Stations human scale, realistic arrangements.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-8fd8cee5-ff9d-41c8-81a2-c762d85beeb7.png",
+      "destination": "assets/panoramas/COMUM/academia_ar_livre.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "piscina",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: On central pool wooden sun deck at edge of adult pool, adjacent shallow children's pool. Turquoise mosaic water, white loungers and cream umbrellas, palms; two residential towers west and east and three towers distant north, clubhouse glass pavilion east. Rear panorama shows access to south boulevard. Same pool shape and materials as reference, ground level.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-3f87cc29-0854-4a6f-a790-4ffa29ee812c.png",
+      "destination": "assets/panoramas/COMUM/piscina.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "pergolado",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Under timber pergola in southwest garden adjoining outdoor gym. Warm wood beams overhead, wicker lounge sofas and low tables, shade patterns, landscaped paths to outdoor gym west and gardens east. Same architecture as reference beyond planting.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-8754b747-09f7-4dcf-b854-b57d300a3c4e.png",
+      "destination": "assets/panoramas/COMUM/pergolado.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "salao_festas",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Inside EAST glazed clubhouse events hall: tall ceiling, floor-to-ceiling windows facing west toward SAME pool deck and campus towers, neutral banquet lounge with round tables, beige chairs, oak wall detailing, cream porcelain floor. Entry glass door west to pool; gourmet kitchen doorway north, covered fitness-room doorway south. Light warm elegant contemporary architecture, natural daylight.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-cf6c24b3-bf11-4a4c-8827-e55e85970f0f.png",
+      "destination": "assets/panoramas/COMUM/salao_festas.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "jardins",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: On pedestrian garden path south of two central towers. Three pink flowering ipe trees in plazas, royal palms and dense pau-ferro canopy, low shrubs and cream stone benches. Pool north, six rental houses south, pergola west, clubhouse east. Low garden lights, exact consistent campus materials.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-64d65112-0a29-42ea-9899-d26bd312c3af.png",
+      "destination": "assets/panoramas/COMUM/jardins.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "casas_aluguel",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: At front pedestrian path along six single-storey rental houses on south boundary, contemporary flat roofs, white plaster, warm wood entry doors, dark slim window frames, small private green yards and low metal railings. Three houses each side of central gatehouse; panorama north half reveals garden/pool/towers beyond. Human eye height.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-605ac03a-2c7a-4fbf-af49-c2cad9bc1e8e.png",
+      "destination": "assets/panoramas/COMUM/casas_aluguel.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "gourmet",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Inside gourmet kitchen attached to north side of SAME eastern clubhouse events hall: long cream stone preparation island, warm oak cabinetry, built-in oven, wine cabinet, dining table, entry opening south to banquet hall visible with same beige chairs/round tables. Windows west toward pool/towers. No people.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-f1b867a4-c028-4fa7-aa29-bced6758efa4.png",
+      "destination": "assets/panoramas/COMUM/gourmet.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "academia_coberta",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: Inside fitness gym in southern wing of SAME eastern glass clubhouse: treadmills facing west glass facade toward pool; exercise bikes, weight racks and strength stations, dark rubber floor, oak accent wall, high ceiling. Door north to same events hall. Realistic gym space, daylight consistent.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-7fa8d9bb-7350-4803-8913-4e693eef77e4.png",
+      "destination": "assets/panoramas/COMUM/academia_coberta.png"
+    },
+    {
+      "property": "COMUM",
+      "id": "torres_residenciais",
+      "prompt": "ONE full spherical 360x180 equirectangular architectural panorama, exact 2:1, highest resolution. Correct spherical projection, entire 360 surroundings from one ground-level camera at 1.6m. Seamless left/right join, same pixels at left/right edges; zenith top, nadir bottom, horizon middle. NOT normal wide-angle photograph. No collage, no panels, no text, no people, logos or arrows. Reference image defines SAME residential campus architecture, plants, sunny daylight and materials. Five towers: three north row, two lower towers flanking pool; clubhouse east, sports west, entry and six houses south. Maintain visual continuity with reference. Camera location: At base entrance of central north tower B. Looking south between the two lower towers toward pool and boulevard; behind viewpoint glass residential lobby, light stone and oak canopy, adjacent taller towers A west and C east. Ground-level not aerial. Glass balcony architecture same as reference. Reception lobby visible through glazed entry, landscaped walkway.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-0c52c046-2789-4c73-ae85-ee3e25c58d5b.png",
+      "destination": "assets/panoramas/COMUM/torres_residenciais.png"
+    }
+  ]
+}

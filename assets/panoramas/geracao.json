@@ -1,0 +1,47 @@
+{
+  "generator": "image_gen built-in",
+  "assets": [
+    {
+      "property": "AP-01",
+      "id": "sala",
+      "prompt": "Generate ONE seamless FULL SPHERICAL EQUIRECTANGULAR 360 x 180 degree architectural panorama, exact 2:1 aspect ratio, preferably 4096x2048. Asset: AP-01 Essencial living/dining room virtual tour. References: image 1 architectural floor plan defines spatial layout; image 2 existing interior board defines furniture and material identity. Camera at eye height 1.6 m centered in the living/dining space. Show the ENTIRE surroundings including ceiling at top and floor at bottom using correct latitude-longitude equirectangular projection, horizon at image middle. Left and right edges must join perfectly with continuous wall and floor, no frame. The front panorama center looks toward the continuous glass balcony with city and treetop skyline, beige couch and oak TV cabinet on west, six-chair oak dining table to east; cream marble island kitchen further east with beige cupboards; behind camera a central corridor leads north to two bedrooms and bathrooms. Maintain coherent single apartment, pale oak, travertine, sand linen, daytime. This is a single spherical image from ONE camera position, NOT collage, NOT multiple panels, NOT a conventional ultrawide photograph. No text, arrows, logos, people, watermark or black bands. Realistic architectural marketing rendering with correct furnishings and restrained lens details.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-a9a06413-bd66-46b9-9aef-6415478a89dd.png",
+      "destination": "assets/panoramas/AP-01/sala.png"
+    },
+    {
+      "property": "AP-01",
+      "id": "cozinha",
+      "prompt": "Generate ONE photographic architectural 360-degree panorama for a virtual tour. Exact equirectangular 2:1 format, full 360 longitude and 180 latitude, not a wide-angle photo. Wraparound seamless left/right borders. Show correct spherical distortion, ceiling zenith at top row and floor nadir at bottom row, horizon at 50% height. ONE viewpoint height 1.60m. No collage, frames, text or arrows. Same AP-01 Essencial apartment as references. Reference 1 floorplan for topology; reference 2 interior board for exact furniture materials; reference 3 living panorama for same lighting, furnishings and shared doorways. Beige cream, pale oak, warm daylight, treetop city skyline viewed from sixth floor. Rendering must be suitable to map inside a full sphere. Camera in kitchen facing marble island and living/dining beyond, balcony in background. Kitchen on east of social area, beige cabinets and cream stone island, wood six-seat dining table beyond island. Behind camera east wall countertop, refrigerator and cabinets; north door to laundry. Match existing living scene furniture. Include all surrounding walls.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-51b512fa-0d91-4f5b-82c7-20a7389d79ca.png",
+      "destination": "assets/panoramas/AP-01/cozinha.png"
+    },
+    {
+      "property": "AP-01",
+      "id": "suite",
+      "prompt": "Generate ONE photographic architectural 360-degree panorama for a virtual tour. Exact equirectangular 2:1 format, full 360 longitude and 180 latitude, not a wide-angle photo. Wraparound seamless left/right borders. Show correct spherical distortion, ceiling zenith at top row and floor nadir at bottom row, horizon at 50% height. ONE viewpoint height 1.60m. No collage, frames, text or arrows. Same AP-01 Essencial apartment as references. Reference 1 floorplan for topology; reference 2 interior board for exact furniture materials; reference 3 living panorama for same lighting, furnishings and shared doorways. Beige cream, pale oak, warm daylight, treetop city skyline viewed from sixth floor. Rendering must be suitable to map inside a full sphere. Camera inside northwest master bedroom beside foot of queen bed. Linen beige bed, oak floors, headboard west, north exterior window, wardrobe/dressing south, doorway toward central corridor southeast, ensuite door southwest. Show all four walls including the door behind camera.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-93481903-1e38-4e17-8ee5-658a02baa312.png",
+      "destination": "assets/panoramas/AP-01/suite.png"
+    },
+    {
+      "property": "AP-01",
+      "id": "quarto",
+      "prompt": "Generate ONE photographic architectural 360-degree panorama for a virtual tour. Exact equirectangular 2:1 format, full 360 longitude and 180 latitude, not a wide-angle photo. Wraparound seamless left/right borders. Show correct spherical distortion, ceiling zenith at top row and floor nadir at bottom row, horizon at 50% height. ONE viewpoint height 1.60m. No collage, frames, text or arrows. Same AP-01 Essencial apartment as references. Reference 1 floorplan for topology; reference 2 interior board for exact furniture materials; reference 3 living panorama for same lighting, furnishings and shared doorways. Beige cream, pale oak, warm daylight, treetop city skyline viewed from sixth floor. Rendering must be suitable to map inside a full sphere. Camera in northeast second bedroom with sage accent bed against north side, desk and oak wardrobe. Window north shows city above treetops; entry doorway southwest to central hallway. Match second-bedroom board. Full 360 around room.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-43c59753-6da0-4cd0-9820-61b7649d04a7.png",
+      "destination": "assets/panoramas/AP-01/quarto.png"
+    },
+    {
+      "property": "AP-01",
+      "id": "banheiro",
+      "prompt": "Generate ONE photographic architectural 360-degree panorama for a virtual tour. Exact equirectangular 2:1 format, full 360 longitude and 180 latitude, not a wide-angle photo. Wraparound seamless left/right borders. Show correct spherical distortion, ceiling zenith at top row and floor nadir at bottom row, horizon at 50% height. ONE viewpoint height 1.60m. No collage, frames, text or arrows. Same AP-01 Essencial apartment as references. Reference 1 floorplan for topology; reference 2 interior board for exact furniture materials; reference 3 living panorama for same lighting, furnishings and shared doorways. Beige cream, pale oak, warm daylight, treetop city skyline viewed from sixth floor. Rendering must be suitable to map inside a full sphere. Camera center of shared bathroom east of central hallway, white toilet, cream stone floating vanity, glass shower with chrome rainfall head, warm beige porcelain, entry door west opens to same hallway. Small window high east. Show all four walls and correct ceiling/nadir spherical projection.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-410f00f7-2751-4973-8a16-76e3eda70fcf.png",
+      "destination": "assets/panoramas/AP-01/banheiro.png"
+    },
+    {
+      "property": "AP-01",
+      "id": "varanda",
+      "prompt": "Generate ONE photographic architectural 360-degree panorama for a virtual tour. Exact equirectangular 2:1 format, full 360 longitude and 180 latitude, not a wide-angle photo. Wraparound seamless left/right borders. Show correct spherical distortion, ceiling zenith at top row and floor nadir at bottom row, horizon at 50% height. ONE viewpoint height 1.60m. No collage, frames, text or arrows. Same AP-01 Essencial apartment as references. Reference 1 floorplan for topology; reference 2 interior board for exact furniture materials; reference 3 living panorama for same lighting, furnishings and shared doorways. Beige cream, pale oak, warm daylight, treetop city skyline viewed from sixth floor. Rendering must be suitable to map inside a full sphere. Camera at middle of linear south balcony. Front half shows a city skyline over treetops from sixth floor beyond glass railing, side edges converge in spherical projection along balcony. Back half shows full-height sliding glass doors looking into SAME living room sofa west, oak dining center and cream island kitchen east. Wicker chairs with beige cushions, pots of ferns and tropical plants, covered balcony ceiling. Exterior never at ground level.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-e51cfd0a-53d8-430c-afe3-a0d6a269f043.png",
+      "destination": "assets/panoramas/AP-01/varanda.png"
+    }
+  ]
+}

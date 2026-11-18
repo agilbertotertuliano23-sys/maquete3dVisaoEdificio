@@ -1,0 +1,617 @@
+{
+  "arquivos_png": 58,
+  "arquivos": [
+    {
+      "arquivo": "AP-01/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2460140,
+      "sha256": "e12784916f5112ddb381eb384b12a9d32417564baa90ea27da81bc303429b1de"
+    },
+    {
+      "arquivo": "AP-01/planta.png",
+      "dimensoes": [
+        1136,
+        1385
+      ],
+      "modo": "RGBA",
+      "bytes": 2572877,
+      "sha256": "17ea0a65abc2345d64ec93be1ae6fdf1fae1e73a7af4205e979e2c852fe17b7b",
+      "percentual_transparente": 17.52
+    },
+    {
+      "arquivo": "AP-02/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2553235,
+      "sha256": "a33f10c735902102800c4c3a2776f5eb04fcdf9bccde82fd90bc9986a7842c65"
+    },
+    {
+      "arquivo": "AP-02/planta.png",
+      "dimensoes": [
+        1184,
+        1328
+      ],
+      "modo": "RGBA",
+      "bytes": 2648088,
+      "sha256": "02ea3f8eb09557bdbd55086f3f892a3760fa045665bce340fa5b744195f9764b",
+      "percentual_transparente": 9.02
+    },
+    {
+      "arquivo": "AP-03/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2688687,
+      "sha256": "6e233dc0f2fa626435546a066f5a464700257d3c8cc3a2051d92d8467ba71e54"
+    },
+    {
+      "arquivo": "AP-03/planta.png",
+      "dimensoes": [
+        1205,
+        1305
+      ],
+      "modo": "RGBA",
+      "bytes": 2735134,
+      "sha256": "d0421f391a1da3c462cfb9a4f28486e43697ce6f2ce83633957437e36b8fd223",
+      "percentual_transparente": 14.62
+    },
+    {
+      "arquivo": "AP-04/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2646954,
+      "sha256": "9d22a856902fc5e37998d602e388ffffef5bcb0ebf1311f933d2f3d40fa0454b"
+    },
+    {
+      "arquivo": "AP-04/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2271762,
+      "sha256": "9a0a40ddeec5af442db7e4a0ca04114577a85fa53b11a200155afc622e3ecb57",
+      "percentual_transparente": 41.74
+    },
+    {
+      "arquivo": "AP-05/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2500896,
+      "sha256": "460e5c9908261de7b0b46b58bd509fb44bbfff367062884714d142b84e98e731"
+    },
+    {
+      "arquivo": "AP-05/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2574329,
+      "sha256": "1022a38ab93e98bfeadd49bec46684d4a96b4b331bcd19744ee7e3cecb6b7e16",
+      "percentual_transparente": 18.91
+    },
+    {
+      "arquivo": "AP-06/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2364002,
+      "sha256": "13871d4b9885642b520f4a452dffe6017b04daf4a2aa34b1f5df9be14dd7a965"
+    },
+    {
+      "arquivo": "AP-06/planta.png",
+      "dimensoes": [
+        1356,
+        1159
+      ],
+      "modo": "RGBA",
+      "bytes": 2647464,
+      "sha256": "6513236b65bccc899ef1c0fa7b8dce5a3a2fb0e94b3e5de24167c91f18066c06",
+      "percentual_transparente": 12.87
+    },
+    {
+      "arquivo": "AP-07/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2447938,
+      "sha256": "04d2a5bc8b1742e67b7ccac6f51827b73e809ba1b4077a9b193b94c3b2d25574"
+    },
+    {
+      "arquivo": "AP-07/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2440042,
+      "sha256": "4418ab0b927e288e829abc3bf945e8a1c6ebaf5a49b4faad5f986084fc816d01",
+      "percentual_transparente": 26.85
+    },
+    {
+      "arquivo": "AP-08/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2476810,
+      "sha256": "fc37ddff138ebff1096f6c1d6fd707eb97d07c1cdfa4fbb5f19893fc6b390294"
+    },
+    {
+      "arquivo": "AP-08/planta.png",
+      "dimensoes": [
+        1402,
+        1122
+      ],
+      "modo": "RGBA",
+      "bytes": 2893969,
+      "sha256": "7c6862b089a4e02f4a7b879a6da59f9989d98d38add5b8411761f9a9c901cf57",
+      "percentual_transparente": 10.99
+    },
+    {
+      "arquivo": "AP-09/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2537669,
+      "sha256": "54814316d0e8134bd2b7afe5adde58033995555b5c6db0b17edfe5def5b776cd"
+    },
+    {
+      "arquivo": "AP-09/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 1931903,
+      "sha256": "ce054a5d14e5d17b65af0164120afbc787a6992536db349d1308ee165631aa3d",
+      "percentual_transparente": 52.4
+    },
+    {
+      "arquivo": "AP-10/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2563303,
+      "sha256": "9a5d2410bced69f541869220a13375e7bf6340a04cc7484b1396d244d6b21cb2"
+    },
+    {
+      "arquivo": "AP-10/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2381221,
+      "sha256": "dc8b09153eb9c4aa1e7ab237f3bac202d57c7c3ce08a515aa38df78dfb8202e9",
+      "percentual_transparente": 23.77
+    },
+    {
+      "arquivo": "AP-11/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2589090,
+      "sha256": "e055af3450bf1e475a00837b40a65da36883f85177b2cefb19d7a1fd9432e3f7"
+    },
+    {
+      "arquivo": "AP-11/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2581820,
+      "sha256": "91f2ada5b2d5bc68560cb4dbfaaa91c10011ab4200013144c1881eccbea91342",
+      "percentual_transparente": 19.54
+    },
+    {
+      "arquivo": "AP-12/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2476238,
+      "sha256": "24cc5a20b24ef0628c85bbcffe8c1f53dd16ccd39486549ca9ac7d0efeb5211b"
+    },
+    {
+      "arquivo": "AP-12/planta.png",
+      "dimensoes": [
+        724,
+        2172
+      ],
+      "modo": "RGBA",
+      "bytes": 2310759,
+      "sha256": "62876b4dea21a5656f2b6db3cc600bc673c2ec8ba258370f074258adb5c1f123",
+      "percentual_transparente": 23.7
+    },
+    {
+      "arquivo": "AP-13/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2658243,
+      "sha256": "faddd6fb623a0ed0e465321485dd39a3bda357b0d5bc491586180994bf9838fc"
+    },
+    {
+      "arquivo": "AP-13/planta.png",
+      "dimensoes": [
+        1389,
+        1132
+      ],
+      "modo": "RGBA",
+      "bytes": 1860866,
+      "sha256": "c84fae515c87ad697db61340a51ac411aee208c68652c1053a3dda2afea9009a",
+      "percentual_transparente": 42.86
+    },
+    {
+      "arquivo": "AP-14/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2611312,
+      "sha256": "aade7985c3cfa6d429232807962aa5ae3b4659f3e058f5cd2461888a7b26dc84"
+    },
+    {
+      "arquivo": "AP-14/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2594139,
+      "sha256": "4f06477116bd5b4d1d16e7c35cc95caa66cc6e3ef3ea99030e5d7d3dee8d9c05",
+      "percentual_transparente": 26.85
+    },
+    {
+      "arquivo": "AP-15/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2582225,
+      "sha256": "1fc4bfe0fdd551c6373850e07eadc5bba597329364cd9a8cf94815a6ac9c7220"
+    },
+    {
+      "arquivo": "AP-15/planta.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGBA",
+      "bytes": 2207208,
+      "sha256": "7ab8e9ac0d3ce645295f611b744249eca74378aef798fd1889de26385695152b",
+      "percentual_transparente": 44.91
+    },
+    {
+      "arquivo": "AP-16/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2584188,
+      "sha256": "b1a361f0844076a14feaeababf1d7fc7bdce52d8f6b5a7626c19d7c13496380b"
+    },
+    {
+      "arquivo": "AP-16/planta.png",
+      "dimensoes": [
+        1672,
+        941
+      ],
+      "modo": "RGBA",
+      "bytes": 2887671,
+      "sha256": "a72aa5a62b9aa24f5e7dea715301705664c2de1b77b9ecad3cea495fe428dbae",
+      "percentual_transparente": 11.78
+    },
+    {
+      "arquivo": "AP-17/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2514933,
+      "sha256": "abee09c2525c00f2cfaafba50094e4f8983f4a9172c6306ab30d5d02384628e0"
+    },
+    {
+      "arquivo": "AP-17/planta.png",
+      "dimensoes": [
+        1448,
+        1086
+      ],
+      "modo": "RGBA",
+      "bytes": 2265908,
+      "sha256": "fc4fd0aa2cf61bd7752210af3e5712ea908efb29bfe4581f4e0ba78be14c3000",
+      "percentual_transparente": 28.02
+    },
+    {
+      "arquivo": "AP-18/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2475792,
+      "sha256": "9cf808e431cd86092b805c1d0c33fb93d4cbcc8fcf99d25b11542c1ee91b0b8a"
+    },
+    {
+      "arquivo": "AP-18/planta.png",
+      "dimensoes": [
+        1312,
+        1199
+      ],
+      "modo": "RGBA",
+      "bytes": 2476310,
+      "sha256": "5df3d1b728128b9be38c948079a5f47965dc51a3ea068563a90c25c80754bb27",
+      "percentual_transparente": 18.67
+    },
+    {
+      "arquivo": "AP-19/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2465519,
+      "sha256": "57da47af12e630ad1a68f99cc9d50625846bfbbcf24e2234bd792c25d13bb85b"
+    },
+    {
+      "arquivo": "AP-19/planta.png",
+      "dimensoes": [
+        1611,
+        976
+      ],
+      "modo": "RGBA",
+      "bytes": 2606022,
+      "sha256": "42db37f9b58189741097666ddea67f38d930fb4bd821cc7a363142d24a42e1e4",
+      "percentual_transparente": 18.75
+    },
+    {
+      "arquivo": "AP-20/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2551229,
+      "sha256": "4b10cbce59e9b7db7019d9085e7c36cc61b0946c4d9cb3de5de414af250283a3"
+    },
+    {
+      "arquivo": "AP-20/planta.png",
+      "dimensoes": [
+        1312,
+        1199
+      ],
+      "modo": "RGBA",
+      "bytes": 1873568,
+      "sha256": "71bb830f8cc2b27c545c56b55b89254a897ae716b50d95adda4dbd327bc889ed",
+      "percentual_transparente": 40.29
+    },
+    {
+      "arquivo": "CS-01/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2748088,
+      "sha256": "1cba0ef1a322abc85326744fb09dc6ff41b878fbea2a1a6fc7f2fd9ee5b66c09"
+    },
+    {
+      "arquivo": "CS-01/estrutura.png",
+      "dimensoes": [
+        1222,
+        1287
+      ],
+      "modo": "RGBA",
+      "bytes": 1976341,
+      "sha256": "a7f23a85913542bc9b8019e2e92deae108fda62c562f81f9fc51fa9d774ce6ff",
+      "percentual_transparente": 22.68
+    },
+    {
+      "arquivo": "CS-01/planta.png",
+      "dimensoes": [
+        1222,
+        1287
+      ],
+      "modo": "RGBA",
+      "bytes": 2369267,
+      "sha256": "38e4476c3502c6aede47616721f2c26e611e004d1c8d1dc960fc15a8e99a50ff",
+      "percentual_transparente": 23.14
+    },
+    {
+      "arquivo": "CS-02/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2827967,
+      "sha256": "815a75d564ad6c59bf989c4965f0d894c025ec80fab0c591cce81da4df15d2a9"
+    },
+    {
+      "arquivo": "CS-02/estrutura.png",
+      "dimensoes": [
+        887,
+        1774
+      ],
+      "modo": "RGBA",
+      "bytes": 1965550,
+      "sha256": "6d6d0d05880b2caeb457597f78d74943499af5505e7cd9c6af54202ae61b2dca",
+      "percentual_transparente": 21.91
+    },
+    {
+      "arquivo": "CS-02/planta.png",
+      "dimensoes": [
+        887,
+        1774
+      ],
+      "modo": "RGBA",
+      "bytes": 2400193,
+      "sha256": "8025a4d175312fd1249602d0ff31517560284de714346af0aba9e6b1e01c5c62",
+      "percentual_transparente": 21.19
+    },
+    {
+      "arquivo": "CS-03/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2554165,
+      "sha256": "9df287cc0fbf89f77293d4e1202dbba3ef4e1fe8338e4b96d1ff30b31607559a"
+    },
+    {
+      "arquivo": "CS-03/estrutura.png",
+      "dimensoes": [
+        1340,
+        1174
+      ],
+      "modo": "RGBA",
+      "bytes": 1586348,
+      "sha256": "8c61307507cbaf8f8423d09a4d37ec6135b752cb2a2acd5fc40f65e55fb72e6e",
+      "percentual_transparente": 38.92
+    },
+    {
+      "arquivo": "CS-03/planta.png",
+      "dimensoes": [
+        1340,
+        1174
+      ],
+      "modo": "RGBA",
+      "bytes": 1820584,
+      "sha256": "03769afe42b60a54522beb1a601ab3d0ed7c7723f45c02368829c92947a05a76",
+      "percentual_transparente": 39.4
+    },
+    {
+      "arquivo": "CS-04/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2933726,
+      "sha256": "e635ca5a6992eef4eec3899fddae7773b3283253172773236eda31eee9719a01"
+    },
+    {
+      "arquivo": "CS-04/estrutura.png",
+      "dimensoes": [
+        1312,
+        1199
+      ],
+      "modo": "RGBA",
+      "bytes": 1901845,
+      "sha256": "0c17d3559750ec3d621d9a8eacff160bc284755ed4d1b28c5804caec7cf77aa1",
+      "percentual_transparente": 32.15
+    },
+    {
+      "arquivo": "CS-04/planta.png",
+      "dimensoes": [
+        1312,
+        1199
+      ],
+      "modo": "RGBA",
+      "bytes": 2127588,
+      "sha256": "dce0e41f2b30d162de66eb101ae032cd9a0983ccdc1ba930ce14affd1f04e1e0",
+      "percentual_transparente": 32.34
+    },
+    {
+      "arquivo": "CS-05/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2648084,
+      "sha256": "05fbe3ff70363775fed6c84c6def7c089e9cc543fbc7da3e742f3360e28eb927"
+    },
+    {
+      "arquivo": "CS-05/estrutura.png",
+      "dimensoes": [
+        1262,
+        1246
+      ],
+      "modo": "RGBA",
+      "bytes": 1965606,
+      "sha256": "1ed4f452bd8db10e95c834fbccfc5024fe931248a776dc2660d8914569671922",
+      "percentual_transparente": 22.32
+    },
+    {
+      "arquivo": "CS-05/planta.png",
+      "dimensoes": [
+        1262,
+        1246
+      ],
+      "modo": "RGBA",
+      "bytes": 2404668,
+      "sha256": "5298ceb9325bbe1cd5e1d235d0cf8f90e81600c69f850506a40c76e44415a7ee",
+      "percentual_transparente": 22.21
+    },
+    {
+      "arquivo": "CS-06/ambientes.png",
+      "dimensoes": [
+        1536,
+        1024
+      ],
+      "modo": "RGB",
+      "bytes": 2928004,
+      "sha256": "81c8602c6375ac904968c444bff76fd0dd6a555539f2b7417a081ed9794e38cd"
+    },
+    {
+      "arquivo": "CS-06/estrutura.png",
+      "dimensoes": [
+        1671,
+        941
+      ],
+      "modo": "RGBA",
+      "bytes": 1720307,
+      "sha256": "63165c2bf5afc33c94218f89d6d1a5dc785163930c558ecaa6f4973e3af5dcb7",
+      "percentual_transparente": 33.77
+    },
+    {
+      "arquivo": "CS-06/planta.png",
+      "dimensoes": [
+        1672,
+        941
+      ],
+      "modo": "RGBA",
+      "bytes": 2030014,
+      "sha256": "9fcc5ceb7bf86fce2db216aadac36dca3bf5786982e511e597112e992471972f",
+      "percentual_transparente": 34.26
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "generator": "image_gen built-in",
+  "assets": [
+    {
+      "property": "COMUM",
+      "id": "boulevard",
+      "prompt": "Use case: architectural photorealistic visualization. Generate ONE true equirectangular full spherical 360 x 180 degree panorama, 2:1 aspect, maximum resolution, seamless left and right borders, full sky zenith at top and paving nadir at bottom. NO text/arrows/panels/logos/people. Ground-level camera at 1.60m on the pedestrian BOULEVARD of a Brazilian residential condominium. Exact campus context: five contemporary white/cream apartment towers, 3 towers in far north row A west 18 floors B center15 floors C east18floors, 2 nearer towers D west and E east10floors. Balconies with clear glass, dark slim frames, light stone and warm wood accents. Centered landscaped boulevard with royal palms, flowering pink ipes, pau-ferro trees, clipped shrubs. Central azure adult/children pool and wooden sun deck between D and E; sports court far WEST (left when facing north); glazed clubhouse EAST(right). South behind camera central concrete/wood gatehouse and six single-storey modern rental houses along front boundary, three each side of entry. View from boulevard near south looking north toward pool and three distant towers, whole surrounding campus in spherical projection. Sunny daytime, realistic high-end architectural marketing CGI. Precisely ONE eye-level camera view covering full sphere. Keep edge seam on simple wall or paving free of distinct objects. This panorama defines the consistent architecture and landscaping for other common-area views.",
+      "source": "C:\\Users\\agilb\\.codex\\generated_images\\01a1e008-0465-7ec1-a027-2342c0a37ad5\\exec-1b557f3d-c162-4a97-a9df-6b804f170630.png",
+      "destination": "assets/panoramas/COMUM/boulevard.png"
+    }
+  ]
+}

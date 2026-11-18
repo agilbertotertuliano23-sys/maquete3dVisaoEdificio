@@ -1,0 +1,770 @@
+[
+  {
+    "property": "AP-01",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-01",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-01",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-01",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-02",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-02",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-02",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-03",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-03",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-03",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-03",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-03",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-04",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-04",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-04",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-05",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-05",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-05",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-05",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-06",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-06",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-06",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-06",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-07",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-07",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-07",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-07",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-08",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-08",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-08",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-08",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-08",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-09",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-09",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-09",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-09",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-10",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-10",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-10",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-10",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-10",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-10",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-11",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-11",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-11",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-11",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-12",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-12",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-12",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-12",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-12",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-12",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-13",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-13",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-13",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-13",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-14",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-14",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-14",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-14",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-14",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-14",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-15",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-15",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-15",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-15",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-15",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-15",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-16",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-16",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-16",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-16",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-16",
+    "id": "quarto-4",
+    "name": "Dormitório 4",
+    "desc": "Inside FOURTH bedroom, distinct guest bedroom with queen bed and wardrobe and compact desk. Match fourth bedroom footprint and door/window orientation from plan. Same materials as other rooms. Door to same private circulation."
+  },
+  {
+    "property": "AP-17",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-17",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-17",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-17",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-17",
+    "id": "quarto-4",
+    "name": "Dormitório 4",
+    "desc": "Inside FOURTH bedroom, distinct guest bedroom with queen bed and wardrobe and compact desk. Match fourth bedroom footprint and door/window orientation from plan. Same materials as other rooms. Door to same private circulation."
+  },
+  {
+    "property": "AP-17",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-17",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-18",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-18",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-18",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-18",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-18",
+    "id": "quarto-4",
+    "name": "Dormitório 4",
+    "desc": "Inside FOURTH bedroom, distinct guest bedroom with queen bed and wardrobe and compact desk. Match fourth bedroom footprint and door/window orientation from plan. Same materials as other rooms. Door to same private circulation."
+  },
+  {
+    "property": "AP-18",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-19",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-19",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-19",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-19",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-19",
+    "id": "quarto-4",
+    "name": "Dormitório 4",
+    "desc": "Inside FOURTH bedroom, distinct guest bedroom with queen bed and wardrobe and compact desk. Match fourth bedroom footprint and door/window orientation from plan. Same materials as other rooms. Door to same private circulation."
+  },
+  {
+    "property": "AP-19",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-19",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-20",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-20",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-20",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "AP-20",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "AP-20",
+    "id": "quarto-4",
+    "name": "Dormitório 4",
+    "desc": "Inside FOURTH bedroom, distinct guest bedroom with queen bed and wardrobe and compact desk. Match fourth bedroom footprint and door/window orientation from plan. Same materials as other rooms. Door to same private circulation."
+  },
+  {
+    "property": "AP-20",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "AP-20",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "AP-20",
+    "id": "banheiro-2",
+    "name": "Banheiro social 2",
+    "desc": "Inside SECOND SHARED BATHROOM near corridor, separate from master ensuite and first shared bathroom, as in plan. Light stone, white vanity, toilet, shower glass. Same architectural materials; compact distinct layout."
+  },
+  {
+    "property": "CS-01",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-01",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-01",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-02",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-02",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-02",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-02",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "CS-02",
+    "id": "patio-servico",
+    "name": "Pátio de serviço",
+    "desc": "In small rear north GROUND FLOOR service patio behind kitchen/laundry. Paved utility patio, modest planting, high privacy boundary, laundry door. Same single-storey house facade, no skyline or elevated balcony."
+  },
+  {
+    "property": "CS-03",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-03",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-03",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-03",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "CS-04",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-04",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-04",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-04",
+    "id": "entrada",
+    "name": "Varanda de entrada",
+    "desc": "In small GROUND FLOOR front entry porch of this house. Wood entrance door, windows toward living, covered canopy, small private garden and paved pedestrian path. This is FRONT porch separate from internal courtyard or rear veranda. Same house architecture."
+  },
+  {
+    "property": "CS-05",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-05",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-05",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-05",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "CS-05",
+    "id": "escritorio",
+    "name": "Escritório",
+    "desc": "Inside dedicated HOME OFFICE indicated in floorplan. Oak desk, ergonomic upholstered chair, laptop, built-in bookshelf, natural light. Same apartment decor. Door connects to hall/living as in plan. Modest realistic home office; do not turn into extra bedroom."
+  },
+  {
+    "property": "CS-06",
+    "id": "banheiro-suite",
+    "name": "Banheiro da suíte",
+    "desc": "Inside the PRIVATE ENSUITE BATHROOM connected to master bedroom, not the shared bathroom. Door to same master bedroom with bed and oak furniture visible. Show shower, vanity, toilet; match master materials and bathroom material palette. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-06",
+    "id": "lavanderia",
+    "name": "Lavanderia",
+    "desc": "Inside the SERVICE LAUNDRY ROOM beside kitchen. Washing machine, utility sink, drying rack, closed storage; kitchen through same access doorway visible. Modest realistic service space, ceramic floor. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-06",
+    "id": "circulacao",
+    "name": "Circulação",
+    "desc": "In CENTRAL PRIVATE HALLWAY at bedroom junction. Same room doors and flooring as reference board; living/dining visible at one end, master bedroom doorway and other bedroom/shared-bath doors at opposite end. Logical floorplan arrangement, no extra corridors. Full all-surroundings 360."
+  },
+  {
+    "property": "CS-06",
+    "id": "quarto-3",
+    "name": "Dormitório 3",
+    "desc": "Inside THIRD bedroom, distinct from master and second bedroom. Child/teen bedroom with single bed, small study desk, wardrobe and window; preserve position and proportions in floorplan. Hall entrance returns to same private circulation. Same apartment materials."
+  },
+  {
+    "property": "CS-06",
+    "id": "closet",
+    "name": "Closet",
+    "desc": "Inside MASTER WALK-IN CLOSET/DRESSING ROOM indicated in floorplan, connected to suite. Oak wardrobe cabinetry, hanging clothing and drawers, mirror, oak floor. Bedroom visible through same access. Compact human scale, no giant commercial boutique."
+  },
+  {
+    "property": "CS-06",
+    "id": "entrada",
+    "name": "Varanda de entrada",
+    "desc": "In small GROUND FLOOR front entry porch of this house. Wood entrance door, windows toward living, covered canopy, small private garden and paved pedestrian path. This is FRONT porch separate from internal courtyard or rear veranda. Same house architecture."
+  }
+]

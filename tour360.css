@@ -1,0 +1,166 @@
+/* ==========================================================================
+   VISITA 360° — vidro claro (Liquid Glass). Tokens em tokens.css.
+   Seleção: botão "imóvel" abre uma janela com abas e busca; os ambientes ficam num carrossel
+   com miniaturas; os controles são botões redondos de vidro (como o "+" da referência).
+   ========================================================================== */
+.tour360 {
+  position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+  background: #0e1620; color: var(--lg-ink); font-family: var(--lg-font); overflow: hidden;
+}
+.tour360::backdrop { background: #000; }
+.tour360[open] { display: block; }
+.tour-stage { position: absolute; inset: 0; touch-action: none; cursor: grab; outline: none; }
+.tour-stage:active { cursor: grabbing; }
+.tour-stage canvas { display: block; width: 100%; height: 100%; }
+.tour360 button, .tour360 input { font: inherit; }
+.tour360 :focus-visible { outline: 2px solid var(--lg-blue-hi); outline-offset: 2px; }
+
+/* superfície de vidro comum */
+.tg-pill, .tg-round, .tour-title, .tour-rooms, .tour-plan-card, .tour-status, .tour-hint, .tour-image-id, .tour-note, .tour-picker {
+  background: var(--lg-sheen), var(--lg-glass);
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+  box-shadow: var(--lg-spec), var(--lg-shadow-sm); color: var(--lg-ink); border: 0;
+}
+
+/* ---------- topo ---------- */
+.tour-top { position: absolute; z-index: 3; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 10px; padding: 14px 16px; pointer-events: none; }
+.tour-top > * { pointer-events: auto; }
+.tg-pill {
+  display: inline-flex; align-items: center; gap: 8px; height: 42px; padding: 0 16px; border-radius: 999px;
+  font: 500 14px var(--lg-font); white-space: nowrap; cursor: pointer; transition: background 0.2s, transform 0.15s;
+}
+.tg-pill:hover { background: var(--lg-sheen), rgba(250, 251, 255, 0.94); }
+.tg-pill:active { transform: scale(0.97); }
+.tg-pill svg { width: 18px; height: 18px; flex: none; fill: none; stroke: currentColor; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
+.tour-prop { max-width: min(48vw, 400px); min-width: 0; }
+.tour-prop-name { overflow: hidden; text-overflow: ellipsis; font-weight: 600; }
+.tour-prop > svg:last-child { width: 16px; height: 16px; transition: transform 0.25s var(--lg-ease); }
+.tour-prop[aria-expanded="true"] > svg:last-child { transform: rotate(180deg); }
+.tour-title { margin-left: auto; padding: 8px 18px; border-radius: 22px; text-align: right; pointer-events: none; max-width: 40vw; }
+.tour-title small { display: block; font-size: 10.5px; font-weight: 600; letter-spacing: 0.08em; color: var(--lg-ink-3); text-transform: uppercase; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tour-title h2 { margin: 2px 0 0; font-size: 18px; font-weight: 600; letter-spacing: -0.015em; line-height: 1.2; }
+
+/* ---------- janela de seleção do imóvel ---------- */
+.tour-picker {
+  position: absolute; z-index: 4; top: 68px; left: 16px; width: min(640px, calc(100vw - 32px));
+  max-height: calc(100dvh - 68px - 160px); display: flex; flex-direction: column; overflow: hidden; border-radius: 28px;
+  background: var(--lg-sheen), var(--lg-glass-strong); animation: tgIn 0.22s var(--lg-ease);
+}
+.tour-picker[hidden] { display: none; }
+.tp-head { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; padding: 14px 14px 10px; }
+.tp-seg { display: flex; gap: 2px; padding: 3px; border-radius: 999px; background: var(--lg-fill-2); }
+.tp-seg button { height: 32px; padding: 0 14px; border: 0; border-radius: 999px; background: transparent; color: var(--lg-ink-2); font: 600 12.5px var(--lg-font); white-space: nowrap; cursor: pointer; }
+.tp-seg button small { margin-left: 5px; font-weight: 500; color: var(--lg-ink-3); }
+.tp-seg button[aria-pressed="true"] { background: #fff; color: var(--lg-ink); box-shadow: 0 1px 3px rgba(20, 24, 40, 0.28); }
+.tp-search {
+  flex: 1 1 170px; min-width: 150px; height: 38px; padding: 0 14px 0 38px; border: 0; border-radius: 999px; outline: none;
+  background: var(--lg-fill) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%236e6e73' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='8.5' cy='8.5' r='5.5'/%3E%3Cpath d='M13 13l4 4'/%3E%3C/svg%3E") no-repeat 13px center / 16px;
+  color: var(--lg-ink); font: 400 14px var(--lg-font);
+}
+.tp-search:focus { background-color: #fff; box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.35); }
+.tp-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 14px 12px; padding: 6px 14px 16px; overflow: auto; overscroll-behavior: contain; }
+.tp-card { display: flex; flex-direction: column; gap: 7px; padding: 0; border: 0; background: transparent; color: var(--lg-ink); text-align: left; cursor: pointer; }
+.tp-card img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 16px; background: #c9ccd6; box-shadow: 0 0 0 2px transparent; transition: box-shadow 0.2s, transform 0.25s var(--lg-ease); }
+.tp-card:hover img { transform: translateY(-2px); box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.4), 0 10px 22px rgba(20, 24, 40, 0.25); }
+.tp-card[aria-current="true"] img { box-shadow: 0 0 0 3px var(--lg-blue); }
+.tp-card strong { font-size: 13px; font-weight: 600; letter-spacing: -0.01em; line-height: 1.25; }
+.tp-card small { font-size: 11.5px; color: var(--lg-ink-3); }
+.tp-empty { grid-column: 1 / -1; padding: 28px 0; text-align: center; color: var(--lg-ink-3); font-size: 14px; }
+
+/* ---------- carrossel de ambientes ---------- */
+/* coluna estreita à esquerda: só ocupa a altura do que tem dentro (até o limite) e deixa o centro da cena livre */
+.tour-rooms { position: absolute; z-index: 3; left: 16px; top: 70px; max-height: calc(100dvh - 70px - 48px); width: 100px; padding: 8px 6px; border-radius: 22px; display: flex; }
+.tour-rooms nav {
+  display: flex; flex-direction: column; gap: 8px; width: 100%; overflow-y: auto; overflow-x: hidden; padding: 0; scroll-snap-type: y proximity; scrollbar-width: none;
+  -webkit-mask-image: linear-gradient(180deg, transparent, #000 10px, #000 calc(100% - 10px), transparent);
+  mask-image: linear-gradient(180deg, transparent, #000 10px, #000 calc(100% - 10px), transparent);
+}
+.tour-rooms nav::-webkit-scrollbar { display: none; }
+.tour-room { flex: none; width: 100%; display: flex; flex-direction: column; gap: 3px; padding: 0; border: 0; background: transparent; color: var(--lg-ink); text-align: center; cursor: pointer; scroll-snap-align: center; }
+.tour-room img { width: 100%; height: 50px; object-fit: cover; border-radius: 11px; background: #c9ccd6; box-shadow: 0 0 0 2px transparent; transition: box-shadow 0.2s, transform 0.25s var(--lg-ease); }
+.tour-room span { font-size: 10.5px; font-weight: 500; line-height: 1.15; color: var(--lg-ink-2); overflow-wrap: anywhere; }
+.tour-room:hover img { transform: translateY(-2px); box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.4); }
+.tour-room[aria-current="true"] img { box-shadow: 0 0 0 3px var(--lg-blue); }
+.tour-room[aria-current="true"] span { color: var(--lg-ink); font-weight: 600; }
+
+/* ---------- botões redondos de vidro ---------- */
+.tour-tools { position: absolute; z-index: 3; right: 16px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; gap: 12px; }
+.tg-round { width: 52px; height: 52px; padding: 0; border-radius: 50%; display: grid; place-items: center; cursor: pointer; transition: transform 0.2s var(--lg-ease), background 0.2s; }
+.tg-round[hidden] { display: none; }
+.tg-round svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.tg-round:hover { transform: scale(1.07); background: var(--lg-sheen), rgba(250, 251, 255, 0.95); }
+.tg-round:active { transform: scale(0.95); }
+.tg-round[aria-pressed="true"] { background: var(--lg-blue); color: #fff; }
+
+.tour-plan-card { position: absolute; z-index: 4; right: 84px; top: 50%; transform: translateY(-50%); width: min(300px, calc(100vw - 110px)); padding: 12px; border-radius: 24px; }
+.tour-plan-card[hidden] { display: none; }
+.tour-plan-card strong { display: block; margin: 2px 4px 8px; font-size: 13px; font-weight: 600; }
+.tour-plan-card img { display: block; width: 100%; max-height: 60dvh; object-fit: contain; border-radius: 14px; background: #f1efe9; }
+
+/* ---------- avisos e legendas ---------- */
+.tour-status { position: absolute; z-index: 5; top: 45%; left: 50%; transform: translate(-50%, -50%); max-width: 80%; padding: 14px 24px; border-radius: 999px; font-size: 14px; font-weight: 500; text-align: center; }
+.tour-status[hidden] { display: none; }
+.tour-hint { position: absolute; z-index: 3; left: 50%; bottom: 30px; transform: translateX(-50%); max-width: calc(100% - 24px); padding: 9px 18px; border-radius: 999px; font-size: 12.5px; font-weight: 500; text-align: center; pointer-events: none; animation: tgHint 9s ease forwards; }
+.tour-image-id { position: absolute; z-index: 2; left: 16px; bottom: 8px; padding: 3px 12px; border-radius: 999px; pointer-events: none; box-shadow: none; }
+.tour-image-id strong { display: none; }
+.tour-image-id small { display: block; font-size: 9.5px; font-weight: 600; letter-spacing: 0.08em; color: var(--lg-ink-3); }
+.tour-note { position: absolute; z-index: 2; right: 16px; bottom: 8px; padding: 3px 12px; border-radius: 999px; font-size: 10.5px; color: var(--lg-ink-2); box-shadow: none; }
+.tour-note a { color: var(--lg-blue); text-decoration: none; font-weight: 600; }
+
+/* ---------- pontos de passagem ---------- */
+.tour-points { position: absolute; inset: 0; z-index: 1; pointer-events: none; }
+.tour-point {
+  position: absolute; transform: translate(-50%, -50%); display: inline-flex; align-items: center; gap: 8px; height: 40px; padding: 0 16px 0 10px;
+  border: 0; border-radius: 999px; background: var(--lg-sheen), rgba(246, 247, 251, 0.86);
+  -webkit-backdrop-filter: blur(16px) saturate(180%); backdrop-filter: blur(16px) saturate(180%);
+  box-shadow: var(--lg-spec), var(--lg-shadow-sm); color: var(--lg-ink); font: 600 13px var(--lg-font); white-space: nowrap; pointer-events: auto; cursor: pointer; transition: background 0.2s;
+}
+.tour-point[hidden] { display: none; }
+.tour-point:hover { background: #fff; }
+.tp-ring { position: relative; flex: none; width: 22px; height: 22px; border-radius: 50%; background: var(--lg-blue); display: grid; place-items: center; }
+.tp-ring::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #fff; }
+.tp-ring::after { content: ""; position: absolute; inset: -5px; border-radius: 50%; border: 2px solid rgba(0, 113, 227, 0.5); animation: tgPulse 2s ease-out infinite; }
+
+/* ---------- botões de entrada usados na maquete (painel do apartamento e card da unidade) ---------- */
+.tour-entry {
+  display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 40px; padding: 0 14px; margin: 0 0 8px;
+  border: 0; border-radius: 999px; background: rgba(0, 113, 227, 0.12); color: var(--lg-blue);
+  font: 600 13px var(--lg-font); text-decoration: none; cursor: pointer; transition: background 0.2s;
+}
+.tour-entry:hover { background: rgba(0, 113, 227, 0.2); }
+.unit-popup-Visual .tour-entry {
+  position: absolute; left: 22px; bottom: 22px; z-index: 4; width: auto; margin: 0; padding: 0 18px; min-height: 40px;
+  background: rgba(246, 247, 251, 0.94); box-shadow: var(--lg-spec), var(--lg-shadow-sm);
+}
+.unit-popup-Visual .tour-entry:hover { background: #fff; }
+
+@keyframes tgIn { from { opacity: 0; transform: translateY(-8px) scale(0.98); } to { opacity: 1; transform: none; } }
+@keyframes tgPulse { 0% { transform: scale(0.7); opacity: 1; } 100% { transform: scale(1.5); opacity: 0; } }
+@keyframes tgHint { 0%, 80% { opacity: 1; } 100% { opacity: 0; visibility: hidden; } }
+
+/* ---------- telas menores ---------- */
+@media (max-width: 650px) {
+  .tour-top { padding: 10px 12px; gap: 8px; }
+  .tg-pill { height: 38px; padding: 0 12px; }
+  .tg-back span { display: none; }
+  .tour-prop { max-width: calc(100vw - 80px); }
+  .tour-title { display: none; }
+  .tour-picker { top: 58px; left: 8px; width: calc(100vw - 16px); max-height: calc(100dvh - 58px - 170px); }
+  .tour-rooms { left: 8px; top: 58px; width: 78px; max-height: calc(100dvh - 58px - 40px); padding: 6px 5px; border-radius: 18px; }
+  .tour-room img { height: 40px; }
+  .tour-room span { font-size: 9.5px; }
+  .tour-tools { right: 10px; gap: 9px; }
+  .tg-round { width: 44px; height: 44px; }
+  .tour-hint { bottom: 34px; font-size: 12px; }
+  .tour-plan-card { right: 62px; width: calc(100vw - 80px); }
+  .tour-note { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tour360 *, .tour360 *::before, .tour360 *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .tg-pill, .tg-round, .tour-title, .tour-rooms, .tour-plan-card, .tour-status, .tour-hint, .tour-picker, .tour-point { background: rgba(246, 247, 251, 0.97); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .tg-pill, .tg-round, .tour-title, .tour-rooms, .tour-plan-card, .tour-status, .tour-hint, .tour-picker, .tour-point { background: #f6f7fb; -webkit-backdrop-filter: none; backdrop-filter: none; }
+}

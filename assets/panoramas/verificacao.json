@@ -1,0 +1,2376 @@
+{
+  "properties": 27,
+  "panoramas": 296,
+  "bytes": 663740452,
+  "errors": [],
+  "images": [
+    {
+      "property": "AP-01",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2116353,
+      "sha256": "62e1313ce9366daf68338e00829e912dea756a9196a004d62c12427ca4a48d2a"
+    },
+    {
+      "property": "AP-01",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1968574,
+      "sha256": "f1838d05cdde8a43b0b31937ddb756abc68d862b23a35aac74fdfcbac2f874cc"
+    },
+    {
+      "property": "AP-01",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1944078,
+      "sha256": "4f906d303f72a0e76a04d9090b6c42e8421c4c9a4255fbd5852f484bb19de7ab"
+    },
+    {
+      "property": "AP-01",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2346026,
+      "sha256": "8c970478a0fec9628957cfecfcef0855c4f9f75e1f3c622fc51d44dc71f6e95f"
+    },
+    {
+      "property": "AP-01",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2151134,
+      "sha256": "e8afb933adc1b8e7c6f247aa8fe9456fb424faffdabbb7d6649ffe8ecb7db437"
+    },
+    {
+      "property": "AP-01",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2216703,
+      "sha256": "46466a1bf078e5d563b1289c6b2f6208880e6d685520d1941c1b1475e1ae4a7c"
+    },
+    {
+      "property": "AP-01",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2148641,
+      "sha256": "48cb790b01e9a13f38b1666d7318fca3e5d6e03dc2e78efb36d81abdb961bad9"
+    },
+    {
+      "property": "AP-01",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2045811,
+      "sha256": "ced6040211842bcd942e7a5a23296709c74f8a3ab15d5884344fb9a582fdbb18"
+    },
+    {
+      "property": "AP-01",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2253461,
+      "sha256": "78ce611cb7417a764e7b079f5357dd79d3e1f38df44d67f4d3e30c824e23de73"
+    },
+    {
+      "property": "AP-01",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2082810,
+      "sha256": "01355a3c52b44e0008e166747599dbd1ddbd1d81173c5d28ce47982cb6b5d1f5"
+    },
+    {
+      "property": "AP-02",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2405388,
+      "sha256": "9c424fba2f7159dac688a1df81cbcfd05c898327b4703c89a9471fdc27e66593"
+    },
+    {
+      "property": "AP-02",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1977224,
+      "sha256": "115edcaf0ba1ec546bfe03d4496bc9bbb0b498d1be70917be3ec80d70e6b419e"
+    },
+    {
+      "property": "AP-02",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2126512,
+      "sha256": "f71cf2e13ba25a862f4ae991bb0f0ccfe6aaac8d9dde0fc6f54168d8b61b40f1"
+    },
+    {
+      "property": "AP-02",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2297291,
+      "sha256": "ed2f989f29754b6bcbd775837eb8ca9b6d80f5ba7d8a99582bd705dd83742338"
+    },
+    {
+      "property": "AP-02",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1957077,
+      "sha256": "0d470c02ea771ea8ea9e4069dcfba1ca86597238de449ff5259083b3604a42c8"
+    },
+    {
+      "property": "AP-02",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2118461,
+      "sha256": "ec8c03b09718e22ae5bc2cbc9e0710c33128e9b10fa624f2f9d5b8d0f990c7b4"
+    },
+    {
+      "property": "AP-02",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2033313,
+      "sha256": "1130d0478a35b4db9f810896ba943e53047bf4bfa17a076ec2ef764f17ad39c1"
+    },
+    {
+      "property": "AP-02",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2260605,
+      "sha256": "949708dba5f785d5770b522d995e148fdf8ad7c08a3d7898e6965362cc7370c0"
+    },
+    {
+      "property": "AP-02",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2148887,
+      "sha256": "becbbd7330dbf6cf011e656b9633fb51c08e8347a411898ed22ef40ec87752da"
+    },
+    {
+      "property": "AP-03",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2396091,
+      "sha256": "5660db4744b7f834a6fb191bc41e04bf600f69eabb43f480c64fc988cf52c66f"
+    },
+    {
+      "property": "AP-03",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2031095,
+      "sha256": "215026c405e09f1c488a9a0732e86aa10e20956fc798fa59257d3eae0ddd25d9"
+    },
+    {
+      "property": "AP-03",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2042041,
+      "sha256": "945dece853d441c6ef06bb30cff1f76a2e35c51d2a1928005bfa02fd30bff9c9"
+    },
+    {
+      "property": "AP-03",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2551884,
+      "sha256": "427ac9a0c4f3e410a285fd5c016e6c09f764eb45af627d1e41d5cda5049beb6e"
+    },
+    {
+      "property": "AP-03",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2055327,
+      "sha256": "09609af08b51012db308c01de1ada8575224763b8d3bcb255efe9956ff6ab5e8"
+    },
+    {
+      "property": "AP-03",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2500659,
+      "sha256": "6739f46e89cfc5ccf4cee2c434055c4a7204f5b095cb4a7f45fb045be9baca6c"
+    },
+    {
+      "property": "AP-03",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2321817,
+      "sha256": "790cc9d136a936c8c0bf8a37fc405ae8fd6e0d945718fd87578cd9f72d94aae0"
+    },
+    {
+      "property": "AP-03",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2310621,
+      "sha256": "88bdaf72efc8e729c7b28033ce001f21cf5d97af9e77f44c818fd88e3a896535"
+    },
+    {
+      "property": "AP-03",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2163848,
+      "sha256": "70d924707853a5758959793b4a49aac8cf82454640fb5a7513c179d5336c56ce"
+    },
+    {
+      "property": "AP-03",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2282048,
+      "sha256": "59487cafbeb3bf7005525c6bfb30b989728b4facbab2f8dec3a321be06b96ae4"
+    },
+    {
+      "property": "AP-03",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2133492,
+      "sha256": "a38bad4f1d7e3c87589793d3edaf8affd401a41c88f1556c72cf7b39f158556b"
+    },
+    {
+      "property": "AP-04",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2317052,
+      "sha256": "3b40f7ec0399f9a3bb974dfbd716455d206047d441e43590273b6e37627e5445"
+    },
+    {
+      "property": "AP-04",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2050379,
+      "sha256": "544bb1a28b4bf895b22a0224b93a7f8bdf268b2023d66cc963d9a829fd658ad7"
+    },
+    {
+      "property": "AP-04",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1973866,
+      "sha256": "b1504345fedf0878d891739323e6b504473f61a97967fc6fb04cb824ea66b4b3"
+    },
+    {
+      "property": "AP-04",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2434364,
+      "sha256": "a9874f1aa66cfc0e74705842a8c4c6215c964ceba341781c3d2149a665682cac"
+    },
+    {
+      "property": "AP-04",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1936477,
+      "sha256": "6f93aa582664c15af73d735e61c9584443ed86ead755e8e50d07f7e6fbb55ae8"
+    },
+    {
+      "property": "AP-04",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2248366,
+      "sha256": "dd0677bc2647a2087ee38d1a58d67588e2e0b144b636c2448303486684c7851b"
+    },
+    {
+      "property": "AP-04",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2125018,
+      "sha256": "4464e3aab29dab158d4a3dd7c7502f175bf8d93f5cc83a68e8c270fefd7a10d0"
+    },
+    {
+      "property": "AP-04",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2335959,
+      "sha256": "63d1f453c61ad883419ce8605b07935fed04de830442bd038f290cf1617b49d1"
+    },
+    {
+      "property": "AP-04",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2057715,
+      "sha256": "a875d969f4c8546f0ea12b18553498ec2fb5b65c7c44e9d85bf973c84664f3fc"
+    },
+    {
+      "property": "AP-05",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2264408,
+      "sha256": "a410d94c6f7a39d22280fcb105a90d2d4dc1200944bbe4a623be6eaf7ce86869"
+    },
+    {
+      "property": "AP-05",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1995826,
+      "sha256": "2e4e83b0540fdfdb7fe50e9e0e320f7d10bc58c9c06b4e7abcab566c1bf1bea1"
+    },
+    {
+      "property": "AP-05",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2108111,
+      "sha256": "d967a5b715560eabea5375342bbb2fb80ffbdab1699526c1e6676936da619634"
+    },
+    {
+      "property": "AP-05",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2570861,
+      "sha256": "acc7bda18303aaaa5ea07d8a06a488888aeb5504ae0f1b945d4cd9ce2c92020b"
+    },
+    {
+      "property": "AP-05",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2125113,
+      "sha256": "174971b085cad1d4cac22d86c00412f86c9349111b4544565fbc49ea1b63b615"
+    },
+    {
+      "property": "AP-05",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2363311,
+      "sha256": "40bd840722ecc503718cdb3c80418b715d4e805594d8f68d0264ed981a707be7"
+    },
+    {
+      "property": "AP-05",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2282415,
+      "sha256": "cafef33df63205d25c8d0637a31821d18e8e77f3a50e5a18bc2b4b685556e22d"
+    },
+    {
+      "property": "AP-05",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2128013,
+      "sha256": "954fb88d11bbad4d8aa0d6a2dbcf6d042b71b3f7f85ca172787da99102c9ef20"
+    },
+    {
+      "property": "AP-05",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2265864,
+      "sha256": "f7ba8302a98d4044ea85d31feb286793b087665c60697f5274f1b5d71c5f8f7d"
+    },
+    {
+      "property": "AP-05",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2207941,
+      "sha256": "0f2a631508e1e186dd70b0884668d6b6350361ca2602384c788985161410e161"
+    },
+    {
+      "property": "AP-06",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2089901,
+      "sha256": "a9297a4828d1dff5e15cecfd864d173f2c15bb24d49d9868032a1ad8cf91a38d"
+    },
+    {
+      "property": "AP-06",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1945366,
+      "sha256": "7cc9eab06698e46bbac65da7196824aee466366e6fe803a04fe1fb0dd9bf635a"
+    },
+    {
+      "property": "AP-06",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1835383,
+      "sha256": "7d648aa3e2319b3c075bae8c8f6294d9ebfc84ca7d470a78ce695c65a235b96e"
+    },
+    {
+      "property": "AP-06",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2126045,
+      "sha256": "5811ecc19e10427c255edf894f125787f7e30a9b9cdf71b08f67f609c49c3aba"
+    },
+    {
+      "property": "AP-06",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1845820,
+      "sha256": "6d1f44d15f0cc6a610984ec0aca77efbad4df54978c709a33b53934968021f12"
+    },
+    {
+      "property": "AP-06",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2230723,
+      "sha256": "b77f3d06fe82996ce193b18618e0d5d8d702c5a47c1c035510c9e4e7687e5ffc"
+    },
+    {
+      "property": "AP-06",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1929282,
+      "sha256": "a76ad6f3c36396321e468d1073171cc08e0012a8a2a2126a4cf46feb1003e286"
+    },
+    {
+      "property": "AP-06",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1927385,
+      "sha256": "e3fa9ab957a430cbe7432c0ab728e841e7160ca7c6eb5c856380f7567a76507c"
+    },
+    {
+      "property": "AP-06",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1944184,
+      "sha256": "90722d86da88810f928edc0cc3d0a80532325f3503481fa9ccbd7fc51f22039c"
+    },
+    {
+      "property": "AP-06",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2060012,
+      "sha256": "78bb1161989cb093cb618fc64f2eb7c5042b0a7e94d986bea60d37bfcb3e1563"
+    },
+    {
+      "property": "AP-07",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2376309,
+      "sha256": "b22c78d6a397b49977ba59ea545f4153f889665f6c0a0cab643160c0caeedbc1"
+    },
+    {
+      "property": "AP-07",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1890532,
+      "sha256": "3f02d4dab8875d153da0c49b6e5b8b747c2597045a48b97bf85305ab54bb9aed"
+    },
+    {
+      "property": "AP-07",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1840435,
+      "sha256": "57d81c1ae4e084565bfa06848c5660dc661ae545809c8ac23913e291d835508f"
+    },
+    {
+      "property": "AP-07",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2323023,
+      "sha256": "09cfe3e961b80299bf5001be2eff20289439e6f9eda86cf3b1c1ebc2ff53d456"
+    },
+    {
+      "property": "AP-07",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1986580,
+      "sha256": "438bbf191a505969dba71a302a3ad68df4ae7f5e31b426cf5c55aa68b6bc1863"
+    },
+    {
+      "property": "AP-07",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2269778,
+      "sha256": "9a2f7eb9897c8f99f9ef45b1a811a5678d3c00bc289b0406fc50f5c23e14f131"
+    },
+    {
+      "property": "AP-07",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1897685,
+      "sha256": "dc497ffb0f24dbccc6466bdb24e2148574efdd0b6c837f34f40091bc9c541bb7"
+    },
+    {
+      "property": "AP-07",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2103676,
+      "sha256": "8da35178fa121084fd0a8612d15841c6bfad88ae0b4c9eb64e062a92675e7db7"
+    },
+    {
+      "property": "AP-07",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2187704,
+      "sha256": "cb69c6fcacd2b23831ae085c0a301d0336045b50282daf054032ecd8b439cf0d"
+    },
+    {
+      "property": "AP-07",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2075127,
+      "sha256": "d77aea19ef6e4090ad3dce9a00818a4f40ee76ebc9fde43d99a21b4c56562606"
+    },
+    {
+      "property": "AP-08",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2235048,
+      "sha256": "720e6d27a6b98c54b65679e4f16993cfda4c1b1b403c7f385bf44fc09b55dc25"
+    },
+    {
+      "property": "AP-08",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1991338,
+      "sha256": "bbbd76a4afc753659a230df2dc66b733a195b2fca0209a42f945167f5970bb40"
+    },
+    {
+      "property": "AP-08",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1925342,
+      "sha256": "260c23fa60a387c604698c1eb27365f8303668ee0c438d80a92a653c72cc2ae6"
+    },
+    {
+      "property": "AP-08",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2273929,
+      "sha256": "2d161d5e7b0bec7cedace793d9e7c2736df36c7d4863bca83f25e4cdb54f9067"
+    },
+    {
+      "property": "AP-08",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1960367,
+      "sha256": "6d9f7f020cd7f831983430cf5142ab7ba9b9a5f4535ba1fc7fa01e0b9ff460d4"
+    },
+    {
+      "property": "AP-08",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2230062,
+      "sha256": "e51e6b293b22b23ce07ca6bab6164d2ce859b51763d81fb5eb00abab0df6684d"
+    },
+    {
+      "property": "AP-08",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2325125,
+      "sha256": "27d30f2007df0bf2aa039f904f3bd1c5eb41254e4c32e8df34703a1796a279ad"
+    },
+    {
+      "property": "AP-08",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2139521,
+      "sha256": "24dd73659db693a2e95b67273aa989d92c87f96f9291a29e8aafa9a03c1e5b84"
+    },
+    {
+      "property": "AP-08",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2277137,
+      "sha256": "a57699b37063d1eb51d0756b7f2ee7ef607dad3d3c2067b8b88f43090a5abb59"
+    },
+    {
+      "property": "AP-08",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2214432,
+      "sha256": "622d46295e793efbfefb5f9495d278c97790da7dff776e47c6c4a1ff31affa1c"
+    },
+    {
+      "property": "AP-08",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2061659,
+      "sha256": "2fff34a24005c66ff567944ddddd714e6552acbd56f56a89315f8da618efefde"
+    },
+    {
+      "property": "AP-09",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2092300,
+      "sha256": "f8d3c59835a0879f166ac06a03c6d3a729192c03f6740b392b24b54cf84f11ad"
+    },
+    {
+      "property": "AP-09",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1881728,
+      "sha256": "4fd56c9867951c998b3cf948d683f90bc2d90eae5466ec95277a54d77d7fa9f4"
+    },
+    {
+      "property": "AP-09",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1881120,
+      "sha256": "26c461406410008b96667af83c4458ae40247ca69890dfd1be8f5de013097a14"
+    },
+    {
+      "property": "AP-09",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2418634,
+      "sha256": "8eed3172e06410e3ea40bfc516435670ee5c1e9fa557906fa0e0ba99fdebafe6"
+    },
+    {
+      "property": "AP-09",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2074319,
+      "sha256": "7c9d217cfd7d4670364616dd01ad57d0502954f8c541e0f176dc7ff955e916d5"
+    },
+    {
+      "property": "AP-09",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2422144,
+      "sha256": "9b49914e30badcdb86741357df980ddb38d6b931d5a571b71900b01d499efb8e"
+    },
+    {
+      "property": "AP-09",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2182614,
+      "sha256": "3a4600cd94e1bd542f2a4c4bd0ec6cc9537c109d93ad9486908d156fd8d5ea90"
+    },
+    {
+      "property": "AP-09",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2460605,
+      "sha256": "688a3db7887b2c6259d30865af37e9f630ed936029984bda993f535a233f563e"
+    },
+    {
+      "property": "AP-09",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2418237,
+      "sha256": "c52c2408acbd835a64ff47cc8820b68e8979d2311c34bad84e34a6230bb41e51"
+    },
+    {
+      "property": "AP-09",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2100211,
+      "sha256": "c708360d7f6bf095052257ffce4b5752987268734b4e5b4c113cf1b07817b36e"
+    },
+    {
+      "property": "AP-10",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2147126,
+      "sha256": "5f02f7cbd84764438247bddb4a59326bd3d27fe260c145ecf99753e3c83b8365"
+    },
+    {
+      "property": "AP-10",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1988797,
+      "sha256": "99b54024601e5e45b33359db20528bfbff6f691b4eba7d1218a114be026b8a37"
+    },
+    {
+      "property": "AP-10",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1945160,
+      "sha256": "a31abebb58a693d81d3c6ad2ad62587de4d465dd5bbf74ac7a2c08bb7c75b5a1"
+    },
+    {
+      "property": "AP-10",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2225047,
+      "sha256": "3a9f55884bb305a957063ba4378fc693c5f3572477dd60a9253ed32f564cd964"
+    },
+    {
+      "property": "AP-10",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2027697,
+      "sha256": "a93c9e6bc33063d61c71232554d1d09f90c4c8ec6c91d4c4b70a48ad580f34c6"
+    },
+    {
+      "property": "AP-10",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2201282,
+      "sha256": "ce2b186cfea0c41d4511e19bb140dd233125bda512c2784f0548e805afdafb1a"
+    },
+    {
+      "property": "AP-10",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2292144,
+      "sha256": "80a99d901ca74776f9c719c62462050bbc46b7055880c491507b52fb272b6393"
+    },
+    {
+      "property": "AP-10",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2283712,
+      "sha256": "6a613296c9d2f7f3658fdc395a40ee40d7a107634cd356c0b8645980dd839149"
+    },
+    {
+      "property": "AP-10",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2107742,
+      "sha256": "cefc03bfd516c96868ee07b17988eaad92e168a5d5373e920878005e6113ae03"
+    },
+    {
+      "property": "AP-10",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2438643,
+      "sha256": "561bfc3873d08a570607d683936ff3a9fb993ea6182117ab1b1dd56b8645e2f4"
+    },
+    {
+      "property": "AP-10",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2221076,
+      "sha256": "583bcaf77a34b6690588f6f2af4ead906a01f2feccd830714657d80e23d4633e"
+    },
+    {
+      "property": "AP-10",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2073300,
+      "sha256": "be9049197d7112e18d1b6b2b6f022e7ee8d14d28930f75e028edfe7d75449498"
+    },
+    {
+      "property": "AP-11",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2278078,
+      "sha256": "b1859a3d8130f2a6fd0f27a609e27c0865013491a1814d66322586c4df71d192"
+    },
+    {
+      "property": "AP-11",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2091213,
+      "sha256": "125f10952efed241c854ac75688fedb059c948a557f45c8ede2be2ea970e3650"
+    },
+    {
+      "property": "AP-11",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1926833,
+      "sha256": "f94f390def94e678058cb479283c31d4fc7aa0402dcd198908aa08f84498d687"
+    },
+    {
+      "property": "AP-11",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2331901,
+      "sha256": "3260f50decd413578144e4d26f4583ebdb9c28659ef9acba590a500faa03dd8e"
+    },
+    {
+      "property": "AP-11",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1998277,
+      "sha256": "b970f9e67e62602dbbc99ffb63da0fc5e88ca52871fae1f57f36313b86c056d8"
+    },
+    {
+      "property": "AP-11",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2302776,
+      "sha256": "1d988c0ef1dc1e66bb3e2d061e1d0f7d5c56c778056be9a85e2615cd713c099c"
+    },
+    {
+      "property": "AP-11",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2152123,
+      "sha256": "b7cccbdeb6520c359db673bcc16901574323dbb046e4a501d7843f9d0a16a5b1"
+    },
+    {
+      "property": "AP-11",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2262558,
+      "sha256": "e9ffa848a1ba2904ba561b4807f03865b151632bfebf2f292d3029e5fbec1bfa"
+    },
+    {
+      "property": "AP-11",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2203097,
+      "sha256": "0a223d4051990a7cc85b2b5c80a763cdb7a90d3fc1ca6e4c10f1527d177db001"
+    },
+    {
+      "property": "AP-11",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2199399,
+      "sha256": "ff656750ce46d37237e55cb03c2fbc4dbb21ada6b417b05defcfe4e6aeeccb11"
+    },
+    {
+      "property": "AP-12",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2204559,
+      "sha256": "f57f829fe07d679fa08e269c234916a70012b054d02f8ba84117a07d0018e69d"
+    },
+    {
+      "property": "AP-12",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1937167,
+      "sha256": "b99499e6ac194f925ac311bbe0a3418f2ebd956880a16b9972f3de4605b095a4"
+    },
+    {
+      "property": "AP-12",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1955046,
+      "sha256": "a84377d58c1e8b7dae0c0256c52fb699930d5ee02deac62712d4afc7378be7bd"
+    },
+    {
+      "property": "AP-12",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2399492,
+      "sha256": "27ab7e818aa97bbc0e6b8b009c429d8e430f7062ef60cc2a8be2c4bda3033098"
+    },
+    {
+      "property": "AP-12",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1994480,
+      "sha256": "71fd45586827cd1efeb1733b098d120694f5923d100b9089419f900699412f47"
+    },
+    {
+      "property": "AP-12",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2186487,
+      "sha256": "d49129ee76e7721f02b05d17ba49b084b7e03b57b9bc848c63c3c3f09989ad5f"
+    },
+    {
+      "property": "AP-12",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2163141,
+      "sha256": "02da80bed8af81f3422d8f7eec79a26c0a48e6625d891ba0308263ae81d284bd"
+    },
+    {
+      "property": "AP-12",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2066180,
+      "sha256": "4bfb0a2fcf42f9ca523f4f55bdc40569f9b522032c613a08d0366afe79ec460d"
+    },
+    {
+      "property": "AP-12",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2055229,
+      "sha256": "741cffd4a123e28f5711437e05f3bbe60110de26b9534e2dbeedd70f4a80c5b2"
+    },
+    {
+      "property": "AP-12",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2319331,
+      "sha256": "cba518c8e2a7bc7b257ec55b739273ae05d780569a732776b435ebe31c9d4991"
+    },
+    {
+      "property": "AP-12",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2197816,
+      "sha256": "6f5f62ff96ab32e61acd310a7f153fa0c28f80780bfa731ec165086f66624668"
+    },
+    {
+      "property": "AP-12",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2138396,
+      "sha256": "bb65110679027eedf0cfc4f3da9e5dd6a3ac5ddf2b83f4da190c30a8bd8d76ab"
+    },
+    {
+      "property": "AP-13",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2402640,
+      "sha256": "61fa859e78f58080fbbf6028f143a2fa18eb0cf255690bdeea14f2a9b65a6c4c"
+    },
+    {
+      "property": "AP-13",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2109918,
+      "sha256": "9f7ca6ad6e9a9845a467e192a9f1dde6f7cffbe3f2232423c5ca37b8485eedb1"
+    },
+    {
+      "property": "AP-13",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1985539,
+      "sha256": "a2340ce4ffea39a0bd9e1f4e06bcd67d1088a21cbe8a31eeb01bacf6fbdbabb0"
+    },
+    {
+      "property": "AP-13",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2526956,
+      "sha256": "aa30c39a2ba2d11803212ecfd41c7901475c1acd347113fcc8d81324a99a6de2"
+    },
+    {
+      "property": "AP-13",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2076503,
+      "sha256": "ee10e5131da8bf13d0750e5478c61cbcfed3fcc13cc30a25a0bd6ae6b7c4fca6"
+    },
+    {
+      "property": "AP-13",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2254913,
+      "sha256": "8f514673955000bbd818aefd79ee582600758b50e279cedc26f3df240c481672"
+    },
+    {
+      "property": "AP-13",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2056268,
+      "sha256": "77563af20bc80945f74a824d2729554895274035e4f1c6be211e9434c7fb881b"
+    },
+    {
+      "property": "AP-13",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2266589,
+      "sha256": "54a4687c5942770a489f40be4ca1ead73475886c6c0233211affa7c29bd69a60"
+    },
+    {
+      "property": "AP-13",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2305873,
+      "sha256": "b15bc65744d0d5c7f5745b81df4f3db3c14d3b6df673cb9ea570b29d4f7aad30"
+    },
+    {
+      "property": "AP-13",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2227851,
+      "sha256": "313535cd0045d15bab17e9243ec771eb7dcfaef18fe985d81d57b8c6f676ab17"
+    },
+    {
+      "property": "AP-14",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2284773,
+      "sha256": "85cb84c521e09f940358c7744cbbd34252b59fdefe595e0ac70b8636c3ef35e0"
+    },
+    {
+      "property": "AP-14",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2207646,
+      "sha256": "8b62bb544b33fcb32a90dbf2202cced3ff1cfed31b0915d72b3ae2bb62ef14cc"
+    },
+    {
+      "property": "AP-14",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1984650,
+      "sha256": "d99aa3e8505af1d1d1c6bf9c061f6ec6823368090641d713bb1235e74bda3f06"
+    },
+    {
+      "property": "AP-14",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2715154,
+      "sha256": "b79e96b4e197f3949590df20c39c27afa4a8cd6f9306a0a9fe7b0890884ee793"
+    },
+    {
+      "property": "AP-14",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2095677,
+      "sha256": "18b070526a0553df6db37254f9b4d0c41329babe4ef8ea724f5728aed3fa6a27"
+    },
+    {
+      "property": "AP-14",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2377993,
+      "sha256": "d8083e9bcfc847f64673d617519cd57c8471b9e7b09f492d627fbd07aafdca54"
+    },
+    {
+      "property": "AP-14",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2260050,
+      "sha256": "e50d296f8b69770b3f6f2dfee8bd51b125b4d29a13b51f77110fd82428690b3d"
+    },
+    {
+      "property": "AP-14",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2356364,
+      "sha256": "415240235464880430eaab37183b52b11f30a1de01cb69f6ac31d50dcbddf419"
+    },
+    {
+      "property": "AP-14",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2250820,
+      "sha256": "1e71bf22a778d195b49db33e29976b700acab9e272b56572b8d6098349a931ca"
+    },
+    {
+      "property": "AP-14",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2259346,
+      "sha256": "329e99a7a605fb7bece047e0714cccc624c92a6e260765b57c99cedc5107feb9"
+    },
+    {
+      "property": "AP-14",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2308702,
+      "sha256": "73b83bfa4a8646ca1fee13e1238cb45d37cc491bd44d4e0606df68e5f125f438"
+    },
+    {
+      "property": "AP-14",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2266319,
+      "sha256": "0527da4db78afb82c7320046d3b25a1d19a66fdeb486fc38a43d0f2aa0fd4407"
+    },
+    {
+      "property": "AP-15",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2253329,
+      "sha256": "f182844d98a0ba8bd81577ed7f52ffe289d14b2ce0e23b75fe720c92450738b8"
+    },
+    {
+      "property": "AP-15",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2021665,
+      "sha256": "ba2c1b85833394e2d9cd23b7a348fe895d607f9857201f88ee774ab5bbbec035"
+    },
+    {
+      "property": "AP-15",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1979145,
+      "sha256": "92f742433d3644ed3f29379b26f702781647bf3ada14cfb5e211db166670ce64"
+    },
+    {
+      "property": "AP-15",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2383761,
+      "sha256": "8f1dc294652777d7273fd7a13955288dd78dfd44291c0c440fb6f57ecdc0d4f6"
+    },
+    {
+      "property": "AP-15",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2021912,
+      "sha256": "89803e4482b731a7a4c5825822afdc420fe005c6e29a1dbf42655e1378b69b87"
+    },
+    {
+      "property": "AP-15",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2248709,
+      "sha256": "d2667a3219d687dbcf9862a3a1e62854314de243aee4deee69ca4fd17a3e8499"
+    },
+    {
+      "property": "AP-15",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2442589,
+      "sha256": "e4ed53b678cc33d1a29a03d34fc91e444fe1fdabead4c997a593fc671cc8dcf4"
+    },
+    {
+      "property": "AP-15",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2181758,
+      "sha256": "e3f7db2c92a2d82eebe621aa4fd7f76644fb1243a8b91ccbb2626919d59b323f"
+    },
+    {
+      "property": "AP-15",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2182412,
+      "sha256": "b7e12b3ff7f6878510e96918ba79004f14311ab7c788582bbd9f4cfadbd560c9"
+    },
+    {
+      "property": "AP-15",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2406483,
+      "sha256": "4d26587a769b6d5e73eeb0c670d37f3a5edaaaba5c99ebf4243ea992f350a9b6"
+    },
+    {
+      "property": "AP-15",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2284783,
+      "sha256": "cdb474c5ff15a40fcd9b5ba3261dc51944bfaa04a8e353c0a7b1279baf322f82"
+    },
+    {
+      "property": "AP-15",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2209306,
+      "sha256": "982a9833c4bcbd89f1436f9de17a8c514e061aea83e454a35052361c80f353f2"
+    },
+    {
+      "property": "AP-16",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2229008,
+      "sha256": "ec3a6fede2331867751462b9c0a0904e7571eb74c96330107b9a777a84785ad2"
+    },
+    {
+      "property": "AP-16",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2109259,
+      "sha256": "3258142f200eeb34d58f2f8e2384f882ecdc5c5ab2b86fe60380d5096a536d8f"
+    },
+    {
+      "property": "AP-16",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2068022,
+      "sha256": "048685766e33c881ba657d5277094c61fd7fb65a8eed53bef5ff3e75e954f499"
+    },
+    {
+      "property": "AP-16",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2441911,
+      "sha256": "16a545a9ac7793e72509ad144c6f97bd7389ba70f756c481037a3d666cbdf61c"
+    },
+    {
+      "property": "AP-16",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2133244,
+      "sha256": "b71140b8578da4043bcaa1f78c6e313531d02a5ea119bf921c8033681ae6be30"
+    },
+    {
+      "property": "AP-16",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2407595,
+      "sha256": "32d14712cffac28b5e5efb9253473ec0ab4a557c609921c7c98c235d77c09ebb"
+    },
+    {
+      "property": "AP-16",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2259821,
+      "sha256": "1b2b7bb7ad7f85582be3473ebfdbc242d0b889ed507e268d31f77e184c77089a"
+    },
+    {
+      "property": "AP-16",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2130985,
+      "sha256": "81992edce545ca685f11b22300e824acc80e7048cd6452a80da06add33ad5895"
+    },
+    {
+      "property": "AP-16",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2163626,
+      "sha256": "54aacf342a2ef209afe0381be45e95d7aa45a678666ac86e76eb9bcf4d073776"
+    },
+    {
+      "property": "AP-16",
+      "room": "quarto-4",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2275603,
+      "sha256": "4c4d7e264e5af4580b55ff747cac3bcd352d92b253f89eb337f8341e350c6059"
+    },
+    {
+      "property": "AP-16",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2152999,
+      "sha256": "8b3c1650d8b0713f05e4fd6e7139fac985bf936626f5a1ef97735ba68ca1af3b"
+    },
+    {
+      "property": "AP-17",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2280547,
+      "sha256": "2e7a29258933ab8f717fad6897431997adae84a9e942f37ba0c1a834913a2785"
+    },
+    {
+      "property": "AP-17",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2038243,
+      "sha256": "394b9fb1e655ce04102a1470e96902b66e47f818779c33369d9f5516b65b898b"
+    },
+    {
+      "property": "AP-17",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2117052,
+      "sha256": "d9f09b1330f8f1b4a831e51d871d09d25bfc26afc2e8d173d74b6ffeeb49ef44"
+    },
+    {
+      "property": "AP-17",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2348840,
+      "sha256": "71f5340e48617c500438d535178a04f10f9ca562041add9affd2a847f3020684"
+    },
+    {
+      "property": "AP-17",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2243309,
+      "sha256": "6163ed771002ee9c097adbc3b658168e051f6d886aa580892cd81dbb6014ddf5"
+    },
+    {
+      "property": "AP-17",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2281928,
+      "sha256": "8f4d5dc6a248bc6f456092f6e66a8d01d5e11ba4fd6eedec3bd3b96cd8e5be62"
+    },
+    {
+      "property": "AP-17",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2212244,
+      "sha256": "ba87cff54967818ed40a338d39048645991053e366c781371a18e587dd664be5"
+    },
+    {
+      "property": "AP-17",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2181581,
+      "sha256": "d3ed579bd69901bb54d6bbd16f71cfaf4210ce08f73dd9abbdbf56877d12efed"
+    },
+    {
+      "property": "AP-17",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2122255,
+      "sha256": "180d5dc6b327b6a7dc46e49b86fd5c6990ada27fca13a12a56ba3d03caea3233"
+    },
+    {
+      "property": "AP-17",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2177165,
+      "sha256": "fd8bfa1e638576d8e36a59d6af8b0addb0a9863c1fe6a7dffa7e1de6c9b594c7"
+    },
+    {
+      "property": "AP-17",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2134367,
+      "sha256": "76c75aa0519219611ab1a9b42004f886c332a469dd9e27c690178a5b46a06efa"
+    },
+    {
+      "property": "AP-17",
+      "room": "quarto-4",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2225458,
+      "sha256": "d6870645f3c74a64d4c1c062239cdfd08acdc67e842f58bfb0aade58834a0dd1"
+    },
+    {
+      "property": "AP-17",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2133765,
+      "sha256": "dd16e6818d82f9c1a76eb483d9be53b4b5397e60f6c8df446d83ee3cb960a715"
+    },
+    {
+      "property": "AP-18",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2279718,
+      "sha256": "01ea426d91978582a9b9b636658b6cdc5394ed79990db8c960c931ff601412b8"
+    },
+    {
+      "property": "AP-18",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2032068,
+      "sha256": "b4d6eacddb35a28f443d0d4362c1f9ad291fce5af7759fbe04af184be543d64b"
+    },
+    {
+      "property": "AP-18",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1998130,
+      "sha256": "70abd2f349e432a45791c4c3a7029fad9964ff151a3aa446a0bed9ff5498ffbd"
+    },
+    {
+      "property": "AP-18",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2481902,
+      "sha256": "0345ea5fefcbb869ffba56f1c4f4278d19e7b11180f80040aa6df12e8b49f5e2"
+    },
+    {
+      "property": "AP-18",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2078223,
+      "sha256": "9dcb37be0993e60881ebe5b6a8669c502f4d7493b8f315672e45523386ef1d21"
+    },
+    {
+      "property": "AP-18",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2284332,
+      "sha256": "cd6401b10c1397a70590ff9d7e6408f534f7571e1cf5a5930073d220f15c4bb3"
+    },
+    {
+      "property": "AP-18",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2447681,
+      "sha256": "77abab91128399801dad409e4d5e6bfa8aa014416a28ef90f40d92849e50ac45"
+    },
+    {
+      "property": "AP-18",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2079569,
+      "sha256": "95ec90f8e4b6cc4f08bc8ca03a68d9c36a0e98921d3dfc29011e958b19ade5ea"
+    },
+    {
+      "property": "AP-18",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2204103,
+      "sha256": "cb59176d86286da09d6ed66f8d028ac3b5d93700f0719504f44391db46f281df"
+    },
+    {
+      "property": "AP-18",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2229908,
+      "sha256": "1ecc6f18d5a084b381df24f976751162325f4cb641aea41aefd6e0df32aba7dd"
+    },
+    {
+      "property": "AP-18",
+      "room": "quarto-4",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2508812,
+      "sha256": "03ebe6efd4c1f47560ed901522b240512d5f7740bf14ab6b1a25f4980fa6b67b"
+    },
+    {
+      "property": "AP-18",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2128465,
+      "sha256": "ecc5d37874b9df134c86d48569a9266145135e199d09b28ebb6d8259077a7eec"
+    },
+    {
+      "property": "AP-19",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2097338,
+      "sha256": "710b2c8fb4c9711defeaba57ebf63f9fcf13f7957758bc8acd04da2ecbc7b2dc"
+    },
+    {
+      "property": "AP-19",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2071351,
+      "sha256": "2987f26129d2ec7a30e5d6dc8417fe4d92e877a10e7137fc1d1a9ab15a57cfd1"
+    },
+    {
+      "property": "AP-19",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2086945,
+      "sha256": "8f8262e612e6b8aff73f8c822183f397854e9aa6a244352d0411ebc711f1075d"
+    },
+    {
+      "property": "AP-19",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2310480,
+      "sha256": "8c6d6eac3f324a302f1f771a3e1ec4fb684f81d56b2226a98b09f42fad14376c"
+    },
+    {
+      "property": "AP-19",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2132163,
+      "sha256": "ff666f0ee5c578d631c7cce04cba06958e7a3d475c89119d1dcd136166bf9b37"
+    },
+    {
+      "property": "AP-19",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2398579,
+      "sha256": "b3b30ff3267b67592d7c09cb68230c1509e0ca01001e23ff278201d0baec9ef4"
+    },
+    {
+      "property": "AP-19",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2336819,
+      "sha256": "45009fe39f726f008f8964ee89ec86b2062db4e2101a3e35d032e15fe70e9572"
+    },
+    {
+      "property": "AP-19",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2441536,
+      "sha256": "19431b047e30c6b7f38eb788de027c55ac41def44bf6319c6d45dd7111e07f9f"
+    },
+    {
+      "property": "AP-19",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2079661,
+      "sha256": "fb157f80f306305ec04644f44518b2c7cc0f3bbf8346ed110481e24cc67a922f"
+    },
+    {
+      "property": "AP-19",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2429356,
+      "sha256": "7b127048a6d057f0176a97d762ad3e2ab73734b8408e11af07365e0ec166ca70"
+    },
+    {
+      "property": "AP-19",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2336100,
+      "sha256": "643cdc5901886a5d02c351040ad2f73d0644dd3692650d477bb4050ac895bc9c"
+    },
+    {
+      "property": "AP-19",
+      "room": "quarto-4",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2271550,
+      "sha256": "c34c08d0bfe2508c74af614e157c816d4e2c2bdf8978c72b261b94c41054b152"
+    },
+    {
+      "property": "AP-19",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2167025,
+      "sha256": "ee7d92dd958a0009bfa19400429014b38490c2a7de4608ddebd9ca27814ec56c"
+    },
+    {
+      "property": "AP-20",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2162279,
+      "sha256": "8dd5c036a4891ae653be868bef778b9a51986ad3b981e51aec81ed2fcb074c79"
+    },
+    {
+      "property": "AP-20",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2095334,
+      "sha256": "cfa0337931b1b73ee5c97b5dc630b84046a340e2e806a05b02c345b386accc9c"
+    },
+    {
+      "property": "AP-20",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1925486,
+      "sha256": "2fe90901e700012d56e1b88ea801a1019db46280c98cef351cf6f0ae6b4d7b0e"
+    },
+    {
+      "property": "AP-20",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2441942,
+      "sha256": "e1612fd61465bc0f1522bb1d024e7f5c7787d01e50f9c7d6bbce9cb186436440"
+    },
+    {
+      "property": "AP-20",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1939851,
+      "sha256": "a899ed7765c2cc30c3a4e91958dce0e418d4bc28ee7e612f03f1db3eb04578c6"
+    },
+    {
+      "property": "AP-20",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2282389,
+      "sha256": "9f1f6de75cb80afecab2be125dcfd18b0fd2354ae88b89702cde931521c984af"
+    },
+    {
+      "property": "AP-20",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2319183,
+      "sha256": "b98202a4095038379f9fbafc0b3a5ef6599fa50b8f7650ec550d0f33deee06b6"
+    },
+    {
+      "property": "AP-20",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2191404,
+      "sha256": "7d8353aac383918a1e5587ef1da667561c925d241e82768c6bbe46b90fb9860a"
+    },
+    {
+      "property": "AP-20",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2216341,
+      "sha256": "55167bd24816bfaa87730bd86f73433b6ee981e3e08cb32363850e30cff773e7"
+    },
+    {
+      "property": "AP-20",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2290544,
+      "sha256": "452ce0a3040f88f018a8ccc842a1ef23b9f32f0cf88c0598d2a5976ef6c497aa"
+    },
+    {
+      "property": "AP-20",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2235121,
+      "sha256": "b3b7472456df6915da4c453693adbc924ebe32e71b82653d37835890df3eb36b"
+    },
+    {
+      "property": "AP-20",
+      "room": "quarto-4",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2245827,
+      "sha256": "d4b7f8574d04d8ff5de4f818418496427bd49dfc196517599241e8ed11053ed6"
+    },
+    {
+      "property": "AP-20",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2227829,
+      "sha256": "8aac32e6b5ee34426f1cefe799e57a25ced3acf267f471185960ace7f998e426"
+    },
+    {
+      "property": "AP-20",
+      "room": "banheiro-2",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2183406,
+      "sha256": "00f6b41cf13ae532cea738558d4c02dedebf83afb0e43812edeba529a59d40c4"
+    },
+    {
+      "property": "CS-01",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2395055,
+      "sha256": "1c32d06b9214e1f4a03ac3b1885379070c94d1be4f30ac5c51f12575fea22162"
+    },
+    {
+      "property": "CS-01",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2196274,
+      "sha256": "f3d9e9a33a499c89479830cf33d172f788dfd717b5ee29a6547eb295e499890c"
+    },
+    {
+      "property": "CS-01",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2022679,
+      "sha256": "966a8e6180dc3334d7cd36fcb5cb789e8b0bc51cb8731e1213c269397610a516"
+    },
+    {
+      "property": "CS-01",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2470666,
+      "sha256": "cbdee857a71c59657e742e89c48adb9e2ca9d3be6b233a258a8a4d5e9c1285fd"
+    },
+    {
+      "property": "CS-01",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2010946,
+      "sha256": "4e4178eae226cd98f7930ae2f0ead621a4e3fc679a38b72c5de5f761aa003c83"
+    },
+    {
+      "property": "CS-01",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2310023,
+      "sha256": "910d267bbedd249bfd4ee915ae697518641fe2733daebad49cf2f86c200f5832"
+    },
+    {
+      "property": "CS-01",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2203244,
+      "sha256": "290f508cef0a80e8d18b20941a6dffacedb0bcd90632a4fdce17e3da887b151a"
+    },
+    {
+      "property": "CS-01",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2365965,
+      "sha256": "c54c77c8c39638f8556fe9d9407f274f79dee1ffd0beba905f2be4fcd5b85c4f"
+    },
+    {
+      "property": "CS-01",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2145151,
+      "sha256": "c6bc64062dc9990da2d6085b151db409486cc3d259ea19c778ba8bf714cd8807"
+    },
+    {
+      "property": "CS-02",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2367239,
+      "sha256": "b29e8391469b0c2700e8301216044df25548e95471d44c200cd100773838b947"
+    },
+    {
+      "property": "CS-02",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2326098,
+      "sha256": "4caeb47a8664f1f477cb8f00b1003d076a0f7fdebf3c04c97c54b8f1157380e2"
+    },
+    {
+      "property": "CS-02",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2020022,
+      "sha256": "5118153eb7201d673e942ce050832013262c4076add15e4ebb95a771671dc110"
+    },
+    {
+      "property": "CS-02",
+      "room": "patio-servico",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2506701,
+      "sha256": "0138d080163df2fe2d250bcc80da1a952b6db77e545b77c946148b2cdbdf7fb2"
+    },
+    {
+      "property": "CS-02",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2613627,
+      "sha256": "113a34e081b03b882a621aea94fade6f1b92e059a1f9b1052f35bb83110d5e32"
+    },
+    {
+      "property": "CS-02",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2144115,
+      "sha256": "6049fab62c0ca0365071799b7403bbf62ecfadc11a32e759dde9d38bcbbcb63e"
+    },
+    {
+      "property": "CS-02",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2197292,
+      "sha256": "0e23d325c4e1e89ae1b7d8bc42e19843d91ac26387cefe55b698d4638c93a1a9"
+    },
+    {
+      "property": "CS-02",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2355379,
+      "sha256": "40e697dff8e7f4dbfbfd4fde16191802ed5b22e6a3c2c8abcf0c09ff26b5f8ee"
+    },
+    {
+      "property": "CS-02",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2195799,
+      "sha256": "07ec632fe87790dd44de4bbb6a6e5e2a3e664e8bd71d55fd9d5d383fe4a68cce"
+    },
+    {
+      "property": "CS-02",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2241542,
+      "sha256": "6f4f19407b66d455f42f9d784211ddb8c72afdecad30018f0fa8ca50bd8d2e2f"
+    },
+    {
+      "property": "CS-02",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2160055,
+      "sha256": "b9806ac9b80dde6e0d4fb0f59241ffd77fc5486c098f2ce1145c615b037647fa"
+    },
+    {
+      "property": "CS-03",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2152339,
+      "sha256": "d2da27f9128d5f60df067df6bf225635ddcb32272d04aed70b3a6011f9370a1c"
+    },
+    {
+      "property": "CS-03",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2094117,
+      "sha256": "4661112a85d8bc6769e00b427ee2c4b1aefcf5028549ecdde4af4a485f7effb1"
+    },
+    {
+      "property": "CS-03",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1903936,
+      "sha256": "626f1b2276636c8fb457395f34b74a58e187310b870a2689ab20c92e135ea956"
+    },
+    {
+      "property": "CS-03",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2306789,
+      "sha256": "3e5c03e183d2a448c6aecf914107cbb79426793bf6176ac1758cc79fd3cd42e9"
+    },
+    {
+      "property": "CS-03",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1883166,
+      "sha256": "27877c110e8b762802af59b7cd31eb1c5d7d72e7770f0177f12fff59c462b661"
+    },
+    {
+      "property": "CS-03",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2356294,
+      "sha256": "30f450a1e5b338e2dc0cc27058b18d0ae43a2ba36925c59fecac4e249a2b6b17"
+    },
+    {
+      "property": "CS-03",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2025501,
+      "sha256": "467fa39572462ce25182fd55f290f0a9b0d44170df2dfc73bd1de3a5641d8703"
+    },
+    {
+      "property": "CS-03",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2242308,
+      "sha256": "fd3743b396bb7143feaecd91c9728517ab3c98b8b8e1271ba538b0b9f812656e"
+    },
+    {
+      "property": "CS-03",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2288504,
+      "sha256": "67b903a99c2749b58566c37afc811bb4c35be788cddaeb9646e19f9b5fbc728f"
+    },
+    {
+      "property": "CS-03",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2077927,
+      "sha256": "8c17617e07458769b9317996eceba230619d0c171b7c5b920d6da117899c2454"
+    },
+    {
+      "property": "CS-04",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2356501,
+      "sha256": "12627c605167930005eac5f96ad9eb61a1c0278655c3dc63d1826f6b138dc64d"
+    },
+    {
+      "property": "CS-04",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2277430,
+      "sha256": "3ca993bf4e77009a670a928f5083fb844e47a64e4eb48fda0f07664226449790"
+    },
+    {
+      "property": "CS-04",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2235208,
+      "sha256": "6be42fa2416136f02b2fc9b687224de4a1976fca8213fcbd5539820ee5cc14bd"
+    },
+    {
+      "property": "CS-04",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3055695,
+      "sha256": "116cbf72585e84aeaffbf912245aab9a79839f7f3871ba1a79782daffd61d4d1"
+    },
+    {
+      "property": "CS-04",
+      "room": "entrada",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2795291,
+      "sha256": "8c2c32ceb4d19eb1735a1bc8a29149bb8bc18d72b7bf6d0c63b251f1ea1c5807"
+    },
+    {
+      "property": "CS-04",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2415549,
+      "sha256": "63238c6055e063d109a02a7764ef609f95ae3f48a9e6aa59ab41bc2d559117a1"
+    },
+    {
+      "property": "CS-04",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2456700,
+      "sha256": "19ad06b6343394804dba812d654a3259b51b11859aeee160241c09b68e81c9d0"
+    },
+    {
+      "property": "CS-04",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2214300,
+      "sha256": "7ef79660c4046f0fdcde661a0f70ca8ee3b62961ecd09f9bc80562e72072d7f5"
+    },
+    {
+      "property": "CS-04",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2399360,
+      "sha256": "14dccf99aa8be43509c7a01d8aa0e15bd5013ae6d104c80ad51938455e783436"
+    },
+    {
+      "property": "CS-04",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2314448,
+      "sha256": "a07e08687169fa6e9de921ec0cb324ddb4ce253bda297fe476d4f0f9e22ce573"
+    },
+    {
+      "property": "CS-05",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2257472,
+      "sha256": "01dfacb2c798c13a7d775657af98e4ed24c8464ec66d57325dcf423b84566b6e"
+    },
+    {
+      "property": "CS-05",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2074718,
+      "sha256": "bc8661d791e136283e785ada4eb80fb1a5f17b8222186b7f7b1ecf3a87ca7ff0"
+    },
+    {
+      "property": "CS-05",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 1922984,
+      "sha256": "ccd3a90539ef0f3ea26f4c7527d62081253a5fb11a07ed7eb639eaecff26f066"
+    },
+    {
+      "property": "CS-05",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2504777,
+      "sha256": "7e30b671c48be649b8fe6db9b120a7354566187b65bb1de8bb98914ae2e14d27"
+    },
+    {
+      "property": "CS-05",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2149484,
+      "sha256": "4d0d4f2f81a7d136f00e1862d79574595fd477c50562bed0c5941b8d4bdb365b"
+    },
+    {
+      "property": "CS-05",
+      "room": "escritorio",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2351136,
+      "sha256": "e207892c330e798894155a8c7f2d97187a789899157de3da1f795fa9d48204dd"
+    },
+    {
+      "property": "CS-05",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2332620,
+      "sha256": "a9b19d7c43522ff05c404cbcd468aa5595421ed42730392ce14f3aa56c240a28"
+    },
+    {
+      "property": "CS-05",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2096101,
+      "sha256": "f8e5a1d6099583ef16903835c5712341b5ee64562d57bf755b284e6873aa35fe"
+    },
+    {
+      "property": "CS-05",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2433697,
+      "sha256": "5ad7f2e0c018e9adc28b44b05efa366e1b8e47b2b0bad6a2d75c25097d889642"
+    },
+    {
+      "property": "CS-05",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2244248,
+      "sha256": "cb0c652325d4a5b6f9d10b07f7bd8e056ed4ffe4b35961f4ce13fa8480768e88"
+    },
+    {
+      "property": "CS-05",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2101261,
+      "sha256": "0a9d0ebe35a9e4c26aec07b45c1f7b3a0a5097b289dbf2c187670a001634a32d"
+    },
+    {
+      "property": "CS-06",
+      "room": "sala",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2426502,
+      "sha256": "3186e13a878388440b49c4f7e8dcabb82a0f5e55fa5e2a361606906cc8a8438c"
+    },
+    {
+      "property": "CS-06",
+      "room": "cozinha",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2387793,
+      "sha256": "226ae666d13f64f1e7f197a6fde190863f5c0577eb610ba021030d124e871c3b"
+    },
+    {
+      "property": "CS-06",
+      "room": "lavanderia",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2115473,
+      "sha256": "e07f50db498c3ba5ab9eaca577f4856f290f467167b71c375d984f98d8e050e0"
+    },
+    {
+      "property": "CS-06",
+      "room": "varanda",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2363090,
+      "sha256": "7bca1c674e532556a4b65746cf7945554504ff6a14b1efe459c9f08080130098"
+    },
+    {
+      "property": "CS-06",
+      "room": "entrada",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2206991,
+      "sha256": "ff314d4848eaf49de18e2fdf9d909c0d25ebe1a72a1560b12d2b6b8eafcf6318"
+    },
+    {
+      "property": "CS-06",
+      "room": "circulacao",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2192549,
+      "sha256": "7a64a1b4fca0425458d5350075fdde55331c544cbf4089ff4a8725dae46299f0"
+    },
+    {
+      "property": "CS-06",
+      "room": "suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2310453,
+      "sha256": "fb26db583b84d4142090373ae04c42fc7d7755f7ba0ede56afc1528cedb610ba"
+    },
+    {
+      "property": "CS-06",
+      "room": "closet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2397638,
+      "sha256": "3d3aa405d318a4507205ee9a1d68a7e7e9525ea635d7cc081fb1355c3c4e23d0"
+    },
+    {
+      "property": "CS-06",
+      "room": "banheiro-suite",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2199427,
+      "sha256": "7cb5c95abe562e51259cbb4e6c1413a4f95fb8e430b3291285842de1193295c7"
+    },
+    {
+      "property": "CS-06",
+      "room": "quarto",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2563386,
+      "sha256": "dd6cd79af465226875fdce87bea4efda2cbcbd9bd22fd99f49f20651e04a221a"
+    },
+    {
+      "property": "CS-06",
+      "room": "quarto-3",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2433314,
+      "sha256": "ac6d13a9ef2f2fd7273e96c85e86712f9af01c2f4ee98c797eacd8d50d87e3e2"
+    },
+    {
+      "property": "CS-06",
+      "room": "banheiro",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2356923,
+      "sha256": "947d3145acc225ef91ecfa3abc7f69aec96d555dfee66a9f57d5b550e91d4db1"
+    },
+    {
+      "property": "COMUM",
+      "room": "portaria",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3174680,
+      "sha256": "02053356918ee649849e4cd866ef97a9d9e78e1a8fee3d4de718741fb61b90e8"
+    },
+    {
+      "property": "COMUM",
+      "room": "boulevard",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3246608,
+      "sha256": "152ba72af4cfeed0a34ac941c0370afc098177b15cf23efaa8107b81c89a213d"
+    },
+    {
+      "property": "COMUM",
+      "room": "piscina",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3198477,
+      "sha256": "6122ebd2c24fa8bc2cb0663ac90280dc88ef37809c78b984e5542102cceec010"
+    },
+    {
+      "property": "COMUM",
+      "room": "quadra",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3036081,
+      "sha256": "51ac70ea619eadb1bb453534994d93f0cb2f888952f92715778c1b026d075af8"
+    },
+    {
+      "property": "COMUM",
+      "room": "academia_ar_livre",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3510335,
+      "sha256": "d12e69bd427744e7de7b333696a8d53d5c775baf9441a22cb236dfd60d21551b"
+    },
+    {
+      "property": "COMUM",
+      "room": "pergolado",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3494412,
+      "sha256": "dde9ce42bd322a927842da31ac02d52b0240aa1d253d3e375a83e51f85d61834"
+    },
+    {
+      "property": "COMUM",
+      "room": "salao_festas",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2662399,
+      "sha256": "397ce451d5e52b1005572e259f6e4d4358ce0872693d9fb648dca7d37c49900e"
+    },
+    {
+      "property": "COMUM",
+      "room": "gourmet",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2625716,
+      "sha256": "8f0ecfdddc329f50c8b144070273189815c107aa501edc26170796cbe4179fd2"
+    },
+    {
+      "property": "COMUM",
+      "room": "academia_coberta",
+      "width": 1774,
+      "height": 887,
+      "bytes": 2822894,
+      "sha256": "d0d99fbe1ffb026643e795be821a02711fdb97478e69b63ff800f3ab7fb8a557"
+    },
+    {
+      "property": "COMUM",
+      "room": "jardins",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3518152,
+      "sha256": "f332ffc1fcc5294c4e0b810e65fbce6c8d4abb2276972630fe50595a9b0d25e5"
+    },
+    {
+      "property": "COMUM",
+      "room": "casas_aluguel",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3029808,
+      "sha256": "92432e9893d5077b1e9df292229eb2e33c520593737d4356190e6ce605624c14"
+    },
+    {
+      "property": "COMUM",
+      "room": "torres_residenciais",
+      "width": 1774,
+      "height": 887,
+      "bytes": 3221187,
+      "sha256": "203f93ae25456c456e36bd512806a9bce919590e77c494174c16da85b508e6dd"
+    }
+  ]
+}

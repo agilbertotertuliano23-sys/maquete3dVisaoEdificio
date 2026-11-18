@@ -1,0 +1,7 @@
+# Originais pesados: ficam só na máquina. O site usa as versões otimizadas (.webp).
+*.zip
+*.mp4
+assets/maquete.glb
+assets/panoramas/**/*.png
+assets/plantas/*/*.png
+node_modules/

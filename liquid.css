@@ -1,0 +1,480 @@
+/* ==========================================================================
+   LIQUID GLASS CLARO — camada visual sobre styles.css e compact.css (carregar DEPOIS deles)
+   Referência: developer.apple.com/design. Tokens em tokens.css.
+   Regras: vidro (blur) só em superfícies grandes e estáticas (barra, painéis, dock, janelas);
+   rótulos flutuantes da cena 3D são sólidos para não pesar na GPU integrada.
+   ========================================================================== */
+
+:root {
+  /* variáveis antigas apontam para o novo material */
+  --panel-bg: var(--lg-glass);
+  --panel-border: transparent;
+  --modal-bg: var(--lg-glass-strong);
+  --modal-card-bg: #fff;
+  --modal-border: transparent;
+  --input-bg: var(--lg-fill);
+  --input-border: transparent;
+  --font-sans: var(--lg-font);
+  --text-muted: var(--lg-ink-3);
+}
+
+html, body { font-family: var(--lg-font); -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+button, input, select { font-family: inherit; }
+:where(button, select, input, summary, a):focus-visible { outline: 2px solid var(--lg-blue-hi); outline-offset: 2px; }
+.ic { width: 16px; height: 16px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- Alturas: a barra agora tem --nav-h; a cena e as janelas começam logo abaixo ---------- */
+.id-stage { padding-top: var(--nav-h); }
+#canvas-container { top: var(--nav-h); height: calc(100vh - var(--nav-h)); height: calc(100dvh - var(--nav-h)); }
+.labels-3d-container { top: var(--nav-h); }
+.sync-toast-overlay, .unit-popup-backdrop, .search-modal-backdrop, .streetview-overlay,
+.mapa-entorno, .reel-modal-backdrop, .arch-modal-backdrop { inset: var(--nav-h) 0 0 0; }
+
+/* ==========================================================================
+   1. BARRA SUPERIOR — barra global escura, como na referência
+   ========================================================================== */
+.id-header {
+  height: var(--nav-h); padding: 0 16px; gap: 12px;
+  background: var(--lg-nav);
+  -webkit-backdrop-filter: saturate(180%) blur(20px); backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08); box-shadow: none; color: var(--lg-nav-ink);
+}
+.id-brand { flex: none; gap: 9px; }
+.id-logo-main { font-size: 15px; font-weight: 600; letter-spacing: -0.02em; color: #f5f5f7; }
+.id-logo-sub { font-size: 8.5px; font-weight: 600; letter-spacing: 0.2em; color: #9ec9ff; }
+/* logo Imobiliária Harness (PNG/WebP sem fundo, dourada) */
+.id-logo-img { display: block; height: 44px; width: auto; transition: filter 0.2s; }
+.id-brand:hover .id-logo-img { filter: brightness(1.12); }
+.id-header-context { flex: 1 1 auto; min-width: 0; justify-content: center; gap: 12px; }
+
+/* vistas: controle segmentado centralizado */
+.camera-presets-bar.seg {
+  gap: 2px; padding: 3px; border: 0; border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+.camera-presets-bar.seg .header-tool-btn {
+  min-height: 28px; padding: 0 15px; border: 0; border-radius: 999px; background: transparent;
+  color: rgba(245, 245, 247, 0.78); font-size: 12.5px; font-weight: 500; box-shadow: none;
+}
+.camera-presets-bar.seg .header-tool-btn:hover { background: rgba(255, 255, 255, 0.12); color: #fff; }
+.camera-presets-bar.seg .header-tool-btn.active {
+  background: #f5f5f7; color: var(--lg-ink); font-weight: 600; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.35);
+}
+
+/* ferramentas */
+.header-actions { gap: 2px; }
+.header-tool-btn {
+  min-height: 30px; padding: 0 12px; gap: 7px; border: 0; border-radius: 999px; background: transparent;
+  color: rgba(245, 245, 247, 0.86); font-size: 12.5px; font-weight: 500; transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+.header-tool-btn:hover { background: rgba(255, 255, 255, 0.13); color: #fff; border-color: transparent; }
+.header-tool-btn.cta { background: var(--lg-blue); color: #fff; font-weight: 600; padding: 0 14px; }
+.header-tool-btn.cta:hover { background: #0077ed; }
+.header-tool-btn:active { transform: scale(0.97); }
+
+/* modos (Filme / Fachada Interativa), no estilo da sub-navegação da referência */
+.id-header-nav { flex: none; gap: 2px; }
+.id-nav-link { padding: 6px 11px; border-radius: 999px; font-size: 12.5px; font-weight: 400; color: rgba(245, 245, 247, 0.8); }
+.id-nav-link:hover { color: #fff; background: rgba(255, 255, 255, 0.1); }
+.id-nav-link.active { color: #fff; font-weight: 500; }
+.id-nav-link.active::after { left: 11px; right: 11px; bottom: -12px; height: 1px; background: #fff; border-radius: 0; }
+
+/* ==========================================================================
+   2. ROTULOS FLUTUANTES NA CENA 3D (sólidos, sem blur)
+   ========================================================================== */
+.tower-tag-3d, .apt-tag-3d, .poi-pill, .unit-hover-tooltip {
+  background: rgba(246, 247, 251, 0.95); color: var(--lg-ink); border: 0;
+  box-shadow: var(--lg-spec), var(--lg-shadow-sm); font-family: var(--lg-font); font-weight: 600; -webkit-backdrop-filter: none; backdrop-filter: none;
+}
+.tower-tag-3d:hover, .apt-tag-3d:hover { background: #fff; border-color: transparent; }
+.apt-tag-3d.active { background: var(--lg-blue); color: #fff; }
+.tower-tag-3d.planta-tag-style { background: #fff; color: var(--lg-ink); border: 0; border-radius: 10px; }
+.poi-pill { border-radius: 999px; padding: 4px 11px; }
+.poi-pill.highway { background: #e3f6e8; color: #13632b; border: 0; }
+.poi-pill.avenue { background: #e4eefc; color: #0a4a9a; border: 0; }
+.poi-stem { background: rgba(255, 255, 255, 0.9); }
+.poi-dot { background: #fff; border-color: rgba(29, 29, 31, 0.55); }
+.unit-hover-tooltip { border-radius: 999px; padding: 4px 11px; }
+.model-loading { background: rgba(246, 247, 251, 0.94); color: var(--lg-ink); box-shadow: var(--lg-spec), var(--lg-shadow-sm); font-weight: 500; }
+.st-dot { margin-right: 5px; }
+.st-dot.st-disponivel { background: var(--lg-green); box-shadow: 0 0 0 3px rgba(52, 199, 89, 0.25); }
+.st-dot.st-reservado { background: var(--lg-yellow); }
+.st-dot.st-vendido { background: var(--lg-gray); }
+
+/* ==========================================================================
+   3. SUPERFÍCIES DE VIDRO (painéis)
+   ========================================================================== */
+.desmonte-panel, .availability-hud, .apt-panel, .pg-title-banner, .pg-card, .mapa-card,
+.editorial-panel, .sync-toast-card, .sv-key-box {
+  background: var(--lg-sheen), var(--lg-glass);
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+  border: 0; border-radius: var(--lg-r-lg);
+  box-shadow: var(--lg-spec), var(--lg-shadow); color: var(--lg-ink);
+}
+.desmonte-panel, .availability-hud, .apt-panel, .planta-geral-sidebar, .editorial-panel {
+  scrollbar-width: thin; scrollbar-color: rgba(29, 29, 31, 0.28) transparent; overscroll-behavior: contain;
+}
+
+/* coluna direita */
+.desmonte-panel, .availability-hud {
+  top: calc(var(--nav-h) + 12px); right: 12px; width: 264px; padding: 14px;
+  max-height: calc(100vh - var(--nav-h) - var(--dock-h) - 24px);
+  max-height: calc(100dvh - var(--nav-h) - var(--dock-h) - 24px); overflow: auto;
+}
+.desmonte-header { margin-bottom: 12px; align-items: center; gap: 8px; }
+.desmonte-kicker { font-size: 10.5px; font-weight: 600; letter-spacing: 0.06em; color: var(--lg-ink-3); text-transform: uppercase; }
+.desmonte-title { font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: var(--lg-ink); margin-top: 2px; }
+.btn-reset-cut {
+  flex: none; min-height: 30px; padding: 0 13px; border: 0; border-radius: 999px;
+  background: var(--lg-fill-2); color: var(--lg-ink); font-size: 12px; font-weight: 500;
+}
+.btn-reset-cut:hover { background: rgba(29, 29, 31, 0.17); border-color: transparent; }
+
+/* torres: controle segmentado (6 células, nada cortado) */
+.tower-selector-grid {
+  display: grid; grid-template-columns: 1.7fr repeat(5, 1fr); gap: 2px; padding: 3px; margin-bottom: 14px;
+  background: var(--lg-fill-2); border-radius: 999px;
+}
+.tower-chip, .tower-chip:first-child {
+  grid-column: auto; min-height: 30px; padding: 0; border: 0; border-radius: 999px; background: transparent;
+  color: var(--lg-ink-2); font-size: 12.5px; font-weight: 600;
+}
+.tower-chip:hover { background: rgba(255, 255, 255, 0.6); color: var(--lg-ink); border-color: transparent; }
+.tower-chip.active { background: #fff; color: var(--lg-ink); border-color: transparent; box-shadow: 0 1px 3px rgba(20, 24, 40, 0.28), 0 0 0 0.5px rgba(20, 24, 40, 0.08); }
+
+/* andar: controle deslizante com polegar de vidro (como na referência) */
+.floor-slider-box { border-top: 1px solid var(--lg-line); padding-top: 12px; }
+.floor-slider-row { font-size: 12.5px; color: var(--lg-ink-2); margin-bottom: 6px; align-items: baseline; }
+.floor-slider-row strong { color: var(--lg-ink); font-weight: 600; }
+#floor-cut-slider {
+  --p: 100%; -webkit-appearance: none; appearance: none; width: 100%; height: 30px; margin: 0 0 8px;
+  background: transparent; cursor: pointer; accent-color: var(--lg-blue);
+}
+#floor-cut-slider::-webkit-slider-runnable-track { height: 8px; border-radius: 999px; background: linear-gradient(90deg, var(--lg-blue) var(--p), rgba(29, 29, 31, 0.16) var(--p)); }
+#floor-cut-slider::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none; width: 36px; height: 24px; margin-top: -8px; border: 0; border-radius: 999px;
+  background: linear-gradient(180deg, #fff, rgba(240, 242, 248, 0.88));
+  box-shadow: inset 0 1px 0 #fff, inset 0 0 0 1px rgba(255, 255, 255, 0.85), 0 3px 10px rgba(20, 24, 40, 0.38), 0 0 0 0.5px rgba(20, 24, 40, 0.2);
+}
+#floor-cut-slider::-moz-range-track { height: 8px; border-radius: 999px; background: rgba(29, 29, 31, 0.16); }
+#floor-cut-slider::-moz-range-progress { height: 8px; border-radius: 999px; background: var(--lg-blue); }
+#floor-cut-slider::-moz-range-thumb { width: 36px; height: 24px; border: 0; border-radius: 999px; background: linear-gradient(180deg, #fff, rgba(240, 242, 248, 0.88)); box-shadow: 0 3px 10px rgba(20, 24, 40, 0.38); }
+.floor-quick-btns { grid-template-columns: 1fr 1fr; gap: 6px; }
+.floor-preset-btn {
+  min-height: 34px; padding: 0 6px; border: 0; border-radius: 12px; background: var(--lg-fill);
+  color: var(--lg-ink); font-size: 12.5px; font-weight: 500; white-space: nowrap;
+}
+.floor-preset-btn:hover { background: var(--lg-fill-2); border-color: transparent; }
+
+.sector-quick-box { border-top: 1px solid var(--lg-line); margin-top: 12px; padding-top: 10px; }
+.sector-quick-box summary { font-size: 12.5px; font-weight: 600; letter-spacing: 0; text-transform: none; color: var(--lg-blue); }
+.sector-mini-btn { background: var(--lg-fill); border: 0; border-radius: 10px; color: var(--lg-ink); font-size: 11.5px; padding: 7px 9px; white-space: normal; line-height: 1.25; }
+.sector-mini-btn:hover { background: rgba(0, 113, 227, 0.14); color: var(--lg-ink); border-color: transparent; }
+.sec-num-badge { border-color: #fff; }
+
+/* unidades disponíveis */
+.avail-legend { flex-direction: column; gap: 9px; margin-bottom: 12px; }
+.legend-item { font-size: 13px; color: var(--lg-ink); gap: 10px; }
+.legend-swatch { width: 12px; height: 12px; border-radius: 50%; }
+.swatch-disponivel { background: var(--lg-green); box-shadow: 0 0 0 3px rgba(52, 199, 89, 0.25); }
+.swatch-reservado { background: var(--lg-yellow); box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.25); }
+.swatch-vendido { background: var(--lg-gray); }
+.avail-actions { border-top: 1px solid var(--lg-line); padding-top: 12px; gap: 8px; }
+.btn-QuickUnit { min-height: 34px; padding: 0 12px; border: 0; border-radius: 12px; background: var(--lg-fill); color: var(--lg-ink); font-size: 12.5px; font-weight: 500; }
+.btn-QuickUnit:hover { background: rgba(52, 199, 89, 0.22); border-color: transparent; }
+.btn-open-filter-modal {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 40px; margin-top: 2px;
+  border: 0; border-radius: 999px; background: var(--lg-blue); color: #fff; font-size: 13px; font-weight: 600;
+}
+.btn-open-filter-modal:hover { background: #0077ed; filter: none; }
+
+/* planta geral */
+.planta-geral-sidebar {
+  top: calc(var(--nav-h) + 12px); right: 12px; bottom: calc(var(--dock-h) + 12px); max-height: none;
+  width: min(340px, calc(100vw - 24px)); gap: 10px; padding: 0 2px 0 0; overflow: auto;
+}
+.pg-title-banner { padding: 12px 16px; }
+.pg-title-banner h2 { color: var(--lg-ink); font-size: 18px; font-weight: 600; letter-spacing: -0.015em; }
+.pg-title-banner small { color: var(--lg-ink-3); }
+.pg-close-btn, .apt-close, .unit-popup-close, .search-modal-close, .reel-modal-close {
+  display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; padding: 0; flex: none;
+  border: 0; border-radius: 50%; background: var(--lg-fill-2); color: var(--lg-ink); font-size: 13px; cursor: pointer; transition: background 0.2s, color 0.2s;
+}
+.pg-close-btn:hover, .apt-close:hover, .unit-popup-close:hover, .search-modal-close:hover, .reel-modal-close:hover { background: var(--lg-red); color: #fff; }
+.pg-card-head { background: transparent; color: var(--lg-ink); border-bottom: 1px solid var(--lg-line); font-size: 13px; font-weight: 600; padding: 10px 14px; }
+.pg-legend-item:hover { background: rgba(255, 149, 0, 0.16); }
+.pg-legend-item strong { color: var(--lg-ink); }
+.pg-legend-item small { color: var(--lg-ink-3); }
+.pg-swatch-item, .pg-dado-row { color: var(--lg-ink-2); }
+.pg-dado-row strong { color: var(--lg-ink); }
+#pg-mini-planta-canvas { border-color: var(--lg-line); }
+
+/* modo Filme */
+.editorial-panel {
+  top: calc(var(--nav-h) + 12px); right: 12px; bottom: calc(var(--dock-h) + 12px); width: min(380px, 34vw);
+  padding: 34px 30px; border-radius: var(--lg-r-xl); overflow: auto;
+}
+.editorial-title { font-size: 40px; font-weight: 600; letter-spacing: -0.025em; line-height: 1.05; color: var(--lg-ink); margin-bottom: 22px; }
+.editorial-copy { font-size: 14px; line-height: 1.5; color: var(--lg-ink-2); }
+.btn-editorial-explore { border: 0; background: var(--lg-blue); color: #fff; font-weight: 600; box-shadow: none; padding: 13px 18px; }
+.btn-editorial-explore:hover { background: #0077ed; box-shadow: none; transform: none; }
+
+/* avisos */
+.sync-toast-card { border-radius: var(--lg-r-lg); }
+.sync-spinner { border-color: rgba(29, 29, 31, 0.18); border-top-color: var(--lg-blue); }
+.sync-title { color: var(--lg-ink); font-weight: 600; }
+.sync-sub { color: var(--lg-ink-3); }
+
+/* ==========================================================================
+   4. DOCK INFERIOR — cápsula de vidro centralizada
+   ========================================================================== */
+.bottom-pill-dock {
+  left: 50%; bottom: 14px; transform: translateX(-50%); width: max-content; max-width: calc(100vw - 24px);
+  gap: 2px; padding: 5px; border: 0; border-radius: 999px;
+  background: var(--lg-sheen), var(--lg-glass);
+  -webkit-backdrop-filter: var(--lg-blur); backdrop-filter: var(--lg-blur);
+  box-shadow: var(--lg-spec), var(--lg-shadow);
+}
+.pill-dock-btn {
+  min-width: 0; min-height: 40px; padding: 0 19px; border: 0; border-radius: 999px; background: transparent;
+  color: var(--lg-ink-2); font-size: 13px; font-weight: 500; white-space: nowrap; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+.pill-dock-btn:hover { transform: none; background: rgba(255, 255, 255, 0.65); color: var(--lg-ink); border-color: transparent; }
+.pill-dock-btn.active { background: #fff; color: var(--lg-ink); font-weight: 600; border-color: transparent; box-shadow: 0 2px 8px rgba(20, 24, 40, 0.28), 0 0 0 0.5px rgba(20, 24, 40, 0.08); }
+.pill-dock-btn:active { transform: scale(0.97); }
+
+/* ==========================================================================
+   5. PAINEL DO APARTAMENTO — fotos ligadas ao apartamento escolhido
+   ========================================================================== */
+.apt-panel {
+  top: calc(var(--nav-h) + 12px); left: 12px; width: 232px; padding: 11px;
+  max-height: calc(100vh - var(--nav-h) - var(--dock-h) - 24px);
+  max-height: calc(100dvh - var(--nav-h) - var(--dock-h) - 24px); overflow: auto;
+}
+.apt-head { margin-bottom: 12px; gap: 10px; }
+.apt-title { font-size: 16px; font-weight: 600; letter-spacing: -0.01em; color: var(--lg-ink); }
+.apt-sub { white-space: normal; font-size: 12px; line-height: 1.35; color: var(--lg-ink-3); }
+.apt-tabs { grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px; }
+.apt-tab {
+  flex-direction: column; gap: 1px; min-height: 44px; padding: 4px 2px; border: 0; border-radius: 12px;
+  background: var(--lg-fill); color: var(--lg-ink); font-size: 13px; font-weight: 600; line-height: 1.15;
+}
+.apt-tab small { font-size: 10.5px; font-weight: 500; color: var(--lg-ink-3); }
+.apt-tab:hover { background: var(--lg-fill-2); border-color: transparent; }
+.apt-tab.active { background: #fff; color: var(--lg-ink); border-color: transparent; box-shadow: 0 0 0 2px var(--lg-blue), 0 2px 8px rgba(20, 24, 40, 0.18); }
+.apt-main { height: clamp(84px, 17vh, 118px); aspect-ratio: auto; margin-bottom: 10px; border-radius: 14px; background: #c9ccd6; }
+.apt-main img.is-planta { background: #f4f5f8; }
+.apt-main figcaption { left: 10px; bottom: 10px; padding: 4px 11px; background: rgba(246, 247, 251, 0.92); color: var(--lg-ink); font-size: 11.5px; font-weight: 600; box-shadow: var(--lg-shadow-sm); }
+.apt-label { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; margin: 2px 2px 8px; font-size: 12.5px; font-weight: 600; color: var(--lg-ink); }
+.apt-label small { font-size: 11px; font-weight: 400; color: var(--lg-ink-3); text-align: right; }
+.apt-label small b { color: var(--lg-blue); font-weight: 700; }
+.apt-thumbs { grid-template-columns: repeat(3, 1fr); gap: 7px 6px; margin-bottom: 10px; }
+.apt-tile { position: relative; display: flex; flex-direction: column; gap: 5px; min-width: 0; }
+.apt-thumb { aspect-ratio: 3 / 2; padding: 0; min-width: 0; overflow: hidden; border: 0; border-radius: 12px; background: #c9ccd6; box-shadow: 0 0 0 2px transparent; transition: box-shadow 0.2s; cursor: pointer; }
+.apt-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.apt-thumb:hover { box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.45); border-color: transparent; }
+.apt-thumb.active { box-shadow: 0 0 0 3px var(--lg-blue); border-color: transparent; }
+.apt-tile-name { font-size: 10px; font-weight: 500; line-height: 1.2; text-align: center; color: var(--lg-ink-2); overflow-wrap: anywhere; }
+.apt-360 {
+  position: absolute; top: 4px; right: 4px; min-width: 26px; height: 16px; padding: 0 5px; border: 0; border-radius: 999px;
+  background: rgba(246, 247, 251, 0.94); color: var(--lg-blue); font-size: 8.5px; font-weight: 700; cursor: pointer; box-shadow: 0 1px 4px rgba(20, 24, 40, 0.3);
+}
+.apt-360:hover { background: var(--lg-blue); color: #fff; }
+.apt-open { display: block; width: 100%; min-height: 42px; border: 0; border-radius: 999px; background: var(--lg-blue); color: #fff; font-size: 13px; font-weight: 600; }
+.apt-open:hover { background: #0077ed; filter: none; }
+
+/* ==========================================================================
+   6. CARD DA UNIDADE
+   ========================================================================== */
+.unit-popup-backdrop, .search-modal-backdrop, .arch-modal-backdrop, .reel-modal-backdrop {
+  background: rgba(20, 22, 30, 0.42); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+}
+.unit-popup-card, .search-modal, .arch-modal, .reel-modal {
+  background: var(--lg-sheen), var(--lg-glass-strong);
+  -webkit-backdrop-filter: blur(40px) saturate(180%); backdrop-filter: blur(40px) saturate(180%);
+  border: 0; border-radius: var(--lg-r-xl); box-shadow: var(--lg-spec), 0 30px 80px rgba(10, 12, 24, 0.5); color: var(--lg-ink);
+}
+.unit-popup-card { width: min(860px, 94vw); }
+.unit-popup-header { background: transparent; border-bottom: 1px solid var(--lg-line); padding: 16px 20px; gap: 12px; flex-wrap: wrap; }
+.unit-popup-price-col { min-width: 180px; }
+.unit-popup-price { font-size: 24px; font-weight: 600; letter-spacing: -0.02em; color: var(--lg-ink); }
+.unit-popup-code { font-size: 11px; letter-spacing: 0.06em; color: var(--lg-ink-3); }
+.unit-popup-specs { gap: 6px; flex-wrap: wrap; }
+.spec-box { min-width: 64px; height: 48px; background: var(--lg-fill); border: 0; border-radius: 14px; }
+.spec-box strong { font-size: 16px; font-weight: 600; color: var(--lg-ink); }
+.spec-box small { font-size: 10.5px; color: var(--lg-ink-3); }
+.unit-popup-body { height: min(470px, calc(100vh - 210px)); height: min(470px, calc(100dvh - 210px)); padding: 12px; background: transparent; }
+.unit-popup-loading { background: var(--lg-glass-strong); color: var(--lg-ink); }
+.unit-popup-Visual { gap: 12px; }
+.up-main-img { border-radius: 20px; background: #c9ccd6; }
+.unit-popup-Visual.view-planta .up-main-img { background: #f4f5f8; padding: 16px; }
+.up-thumbs { width: 300px; padding: 54px 2px 2px 0; gap: 10px 8px; align-content: start; grid-auto-rows: auto; background: transparent; overflow: auto; }
+.up-thumb { display: flex; flex-direction: column; align-items: stretch; gap: 6px; padding: 0; min-height: 0; overflow: visible; border: 0; border-radius: 0; background: transparent; color: var(--lg-ink); cursor: pointer; }
+.up-thumb img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 14px; box-shadow: 0 0 0 2px transparent; transition: box-shadow 0.2s; }
+.up-thumb span { position: static; padding: 0; background: none; color: var(--lg-ink-2); font-size: 11.5px; font-weight: 500; text-align: center; }
+.up-thumb:hover { border-color: transparent; }
+.up-thumb:hover img { box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.45); }
+.up-thumb.active { border-color: transparent; }
+.up-thumb.active img { box-shadow: 0 0 0 3px var(--lg-blue); }
+.up-thumb.active span { color: var(--lg-ink); font-weight: 600; }
+.unit-status-pill { top: 22px; left: 22px; padding: 5px 13px; font-size: 10.5px; letter-spacing: 0.05em; }
+.unit-status-pill.status-disponivel { background: var(--lg-green-ink); color: #fff; }
+.unit-status-pill.status-reservado { background: var(--lg-yellow); color: var(--lg-ink); }
+.unit-status-pill.status-vendido { background: #c4281e; color: #fff; }
+.unit-view-tabs { top: 12px; right: 12px; }
+.u-tab { min-height: 30px; padding: 0 14px; border: 0; background: rgba(29, 29, 31, 0.08); color: var(--lg-ink); font-size: 12px; font-weight: 600; -webkit-backdrop-filter: none; backdrop-filter: none; }
+.u-tab:hover { background: rgba(29, 29, 31, 0.15); color: var(--lg-ink); border-color: transparent; }
+.u-tab.active, .u-tab.active:hover { background: var(--lg-ink); color: #fff; border-color: transparent; }
+
+/* ==========================================================================
+   7. BUSCAR UNIDADES
+   ========================================================================== */
+.search-modal { width: min(980px, 95vw); max-height: calc(100vh - var(--nav-h) - 28px); max-height: calc(100dvh - var(--nav-h) - 28px); }
+.search-modal-head { padding: 20px 24px 14px; border-bottom: 1px solid var(--lg-line); }
+.search-modal-head h2 { font-size: 22px; font-weight: 600; letter-spacing: -0.02em; color: var(--lg-ink); }
+.search-modal-sub { color: var(--lg-ink-3); font-size: 13px; }
+.search-filters-wrap { flex: none; padding: 14px 24px; border-bottom: 1px solid var(--lg-line); }
+.filter-field label { color: var(--lg-ink-3); font-size: 10.5px; letter-spacing: 0.05em; }
+.search-input-box input, .filter-field select { height: 40px; border: 0; border-radius: 12px; background: var(--lg-fill); color: var(--lg-ink); font-size: 13px; }
+.search-input-box input:focus, .filter-field select:focus { background: #fff; box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.35); border-color: transparent; }
+.search-ic { color: var(--lg-ink-3); }
+.filter-field select option { color: #1d1d1f; background: #fff; }
+.sub-lbl { color: var(--lg-ink-3); font-size: 10px; }
+.btn-clear-filters { border: 0; border-radius: 999px; background: var(--lg-fill-2); color: var(--lg-ink); padding: 8px 15px; font-size: 12.5px; font-weight: 500; }
+.btn-clear-filters:hover { background: rgba(29, 29, 31, 0.17); }
+.btn-preset-1m { border: 0; border-radius: 999px; background: rgba(0, 113, 227, 0.12); color: var(--lg-blue); padding: 8px 15px; font-size: 12.5px; font-weight: 600; }
+.btn-preset-1m:hover { background: rgba(0, 113, 227, 0.2); color: var(--lg-blue); }
+.units-found-count { color: var(--lg-ink-3); font-size: 12.5px; }
+.search-results-container { flex: 1 1 auto; min-height: 120px; max-height: none; padding: 16px 24px 22px; }
+.search-loading-box { background: var(--lg-fill); border: 0; border-radius: 18px; }
+.search-loading-box strong { color: var(--lg-ink); }
+.search-loading-box small { color: var(--lg-ink-3); }
+.unit-result-card { background: #fff; border: 0; border-radius: 18px; box-shadow: 0 1px 3px rgba(20, 24, 40, 0.12); }
+.unit-result-card:hover { border-color: transparent; box-shadow: 0 10px 26px rgba(20, 24, 40, 0.2); }
+.urc-title, .urc-price { color: var(--lg-ink); }
+.urc-spec-pill { background: var(--lg-fill); border: 0; border-radius: 999px; color: var(--lg-ink-2); padding: 2px 9px; }
+.urc-status.st-disponivel { background: rgba(52, 199, 89, 0.18); color: #1a7a35; border: 0; }
+.urc-status.st-reservado { background: rgba(255, 204, 0, 0.28); color: #7a5b00; border: 0; }
+.urc-status.st-vendido { background: rgba(255, 59, 48, 0.16); color: #b3261e; border: 0; }
+.btn-ver-unidade { background: var(--lg-blue); color: #fff; border-radius: 999px; padding: 6px 15px; font-weight: 600; }
+.btn-ver-unidade:hover { background: #0077ed; color: #fff; transform: none; }
+
+/* ==========================================================================
+   8. PAISAGISMO E FICHA TÉCNICA
+   ========================================================================== */
+.arch-modal { width: min(1080px, 95vw); max-height: calc(100vh - var(--nav-h) - 28px); max-height: calc(100dvh - var(--nav-h) - 28px); }
+.arch-modal-head { background: transparent; border-bottom: 1px solid var(--lg-line); padding: 18px 24px; }
+.arch-modal-head h2 { color: var(--lg-ink); font-size: 20px; font-weight: 600; letter-spacing: -0.02em; }
+.arch-modal-body { padding: 18px 24px 24px; }
+.botanical-tree-card, .botanical-shrub-card, .typo-sheet-card, .amenity-mini-card, .ficha-struct-box, .ficha-materials-box {
+  background: #fff; border: 0; border-radius: 20px; box-shadow: 0 1px 3px rgba(20, 24, 40, 0.1);
+}
+.tree-title-pill, .shrubs-section-title { background: var(--lg-fill); border: 0; color: var(--lg-ink); }
+.tree-title-pill strong, .shrub-info strong, .amenity-mini-card strong, .mat-swatch strong { color: var(--lg-ink); }
+.tree-title-pill em, .tree-dims-top, .shrub-info em, .shrub-info small, .typo-sheet-head small, .amenity-mini-card p, .mat-swatch small { color: var(--lg-ink-3); }
+.tree-detail-list, .typo-specs-list, .ficha-struct-box ul { color: var(--lg-ink-2); }
+.tree-loc-desc { color: var(--lg-blue); }
+.typo-badge, .ficha-struct-box h4, .ficha-materials-box h4 { color: var(--lg-ink); }
+.btn-focus-tree-3d, .btn-focus-3d-sheet { border: 0; border-radius: 999px; background: var(--lg-blue); color: #fff; font-weight: 600; padding: 9px 14px; }
+.btn-focus-tree-3d:hover, .btn-focus-3d-sheet:hover { background: #0077ed; }
+.amenity-mini-card:hover { border-color: transparent; box-shadow: 0 10px 26px rgba(20, 24, 40, 0.2); }
+.tree-preview-canvas, .shrub-circle-preview, .mat-swatch span { border-color: var(--lg-line); }
+
+/* vídeo de referência */
+.reel-modal { width: min(560px, 94vw); }
+.reel-modal-head { border-bottom: 1px solid var(--lg-line); gap: 10px; }
+.reel-modal-head strong { color: var(--lg-ink); font-size: 14px; font-weight: 600; }
+.reel-modal-head select { max-width: 100%; margin-top: 6px; padding: 6px 10px; border: 0; border-radius: 10px; background: var(--lg-fill); color: var(--lg-ink); font-size: 12px; }
+.btn-download-mp4 { background: var(--lg-blue); color: #fff; border-radius: 999px; padding: 7px 14px; font-weight: 600; }
+
+/* ==========================================================================
+   9. MAPA E STREET VIEW
+   ========================================================================== */
+.mapa-card { top: 12px; left: 12px; max-width: min(360px, calc(100vw - 24px)); padding: 14px 16px; }
+.mapa-card strong { color: var(--lg-ink); font-size: 15px; font-weight: 600; }
+.mapa-card small { color: var(--lg-ink-3); }
+.mapa-botoes button { border: 0; background: var(--lg-fill-2); color: var(--lg-ink); padding: 7px 14px; font-size: 12.5px; font-weight: 500; transition: background 0.2s, color 0.2s; }
+.mapa-botoes button:hover { background: rgba(29, 29, 31, 0.17); }
+.mapa-botoes button.active { background: var(--lg-green-ink); color: #fff; }
+.mapa-status, .sv-status { background: rgba(246, 247, 251, 0.95); color: var(--lg-ink); border: 0; box-shadow: var(--lg-spec), var(--lg-shadow-sm); }
+.mp-pill { background: rgba(246, 247, 251, 0.96); color: var(--lg-ink); border-width: 2px; }
+.streetview-topbar { flex-wrap: wrap; background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); }
+.sv-location-info strong { color: #fff; }
+.sv-location-info small { color: rgba(255, 255, 255, 0.82); }
+.sv-pegman-badge { background: rgba(246, 247, 251, 0.95); color: var(--lg-ink); }
+.sv-btn-rotate, .sv-btn-close, .sv-chip { border: 0; border-radius: 999px; background: rgba(246, 247, 251, 0.9); color: var(--lg-ink); font-weight: 600; padding: 8px 15px; }
+.sv-btn-rotate:hover, .sv-chip:hover { background: #fff; }
+.sv-btn-close { background: var(--lg-blue); color: #fff; }
+.sv-btn-close:hover { background: #0077ed; }
+.sv-chip { font-size: 12px; padding: 6px 13px; }
+.sv-chip.active { background: var(--lg-ink); color: #fff; }
+.sv-key-box strong { color: var(--lg-ink); }
+.sv-key-box p { color: var(--lg-ink-2); }
+.sv-key-box code { background: var(--lg-fill-2); color: var(--lg-ink); }
+.sv-key-row input { background: #fff; border: 0; box-shadow: inset 0 0 0 1px var(--lg-line); color: var(--lg-ink); border-radius: 12px; padding: 10px 12px; }
+.sv-key-hint { color: var(--lg-ink-3) !important; }
+
+/* ==========================================================================
+   10. TELAS MENORES — nada fica cortado
+   ========================================================================== */
+@media (max-width: 1320px) {
+  .header-actions .header-tool-btn:not(.cta) span { display: none; }
+  .header-actions .header-tool-btn { padding: 0 10px; }
+}
+@media (min-width: 901px) {
+  .header-actions .header-tool-btn.cta span { display: inline; }
+}
+@media (max-width: 1040px) {
+  .id-logo-text { display: none; }
+}
+@media (max-width: 900px) {
+  .id-nav-link[data-topmode="filme"] { display: none; }
+  .desmonte-panel, .availability-hud { width: 244px; right: 8px; }
+  .apt-panel { width: 220px; left: 8px; }
+  .filter-row-5 { grid-template-columns: repeat(2, 1fr); }
+  .filter-row-area-price, .search-results-grid { grid-template-columns: 1fr; }
+  .trees-showcase-grid, .typologies-grid-3 { grid-template-columns: 1fr; }
+  .shrubs-showcase-grid, .materials-swatches-grid { grid-template-columns: repeat(3, 1fr); }
+  .ficha-amenities-row { grid-template-columns: repeat(2, 1fr); }
+  .ficha-bottom-row { grid-template-columns: 1fr; }
+  .unit-popup-Visual { flex-direction: column; }
+  .unit-popup-body { height: min(620px, calc(100dvh - 190px)); overflow: auto; }
+  .up-main-img { flex: none; height: 46%; }
+  .up-thumbs { width: 100%; padding: 4px 0 0; grid-template-columns: repeat(3, 1fr); overflow: visible; }
+  .unit-view-tabs { top: 10px; right: 10px; }
+}
+@media (max-width: 720px) {
+  .id-logo-img { height: 38px; }
+  .id-header-context { justify-content: flex-start; overflow-x: auto; scrollbar-width: none; }
+  .id-header-context::-webkit-scrollbar { display: none; }
+  .bottom-pill-dock { flex-wrap: wrap; justify-content: center; border-radius: 24px; }
+  .pill-dock-btn { padding: 0 14px; min-height: 36px; font-size: 12.5px; }
+}
+@media (max-width: 640px) {
+  .apt-panel { top: auto; left: 8px; right: 8px; width: auto; bottom: calc(var(--dock-h) + 24px); max-height: 46dvh; }
+  .desmonte-panel, .availability-hud { left: 8px; right: 8px; width: auto; max-height: 38dvh; }
+  .editorial-panel { left: 8px; width: auto; }
+}
+@media (max-height: 600px) {
+  .apt-main { height: clamp(64px, 15vh, 96px); }
+  .desmonte-panel .sector-quick-box { display: none; }
+}
+
+/* ==========================================================================
+   11. ACESSIBILIDADE E ALTERNATIVAS
+   ========================================================================== */
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .desmonte-panel, .availability-hud, .apt-panel, .pg-title-banner, .pg-card, .mapa-card, .editorial-panel, .bottom-pill-dock,
+  .unit-popup-card, .search-modal, .arch-modal, .reel-modal { background: rgba(244, 245, 249, 0.97); }
+  .id-header { background: #333336; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .desmonte-panel, .availability-hud, .apt-panel, .pg-title-banner, .pg-card, .mapa-card, .editorial-panel, .bottom-pill-dock,
+  .unit-popup-card, .search-modal, .arch-modal, .reel-modal { background: #f4f5f9; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .id-header { background: #333336; -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+.sector-quick-box .sector-mini-list { grid-template-columns: minmax(0, 1fr) auto; }

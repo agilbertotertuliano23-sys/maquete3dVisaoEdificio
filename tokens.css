@@ -1,0 +1,49 @@
+/* ==========================================================================
+   TOKENS "LIQUID GLASS" CLARO
+   Referência: developer.apple.com/design (medido em 15/11/2026)
+   - barra global escura (#1d1d1f / translúcida), botão azul #0071e3 com raio 980px
+   - SF Pro Display 600, títulos #1d1d1f sobre fundo lavanda-cinza claro
+   - vidro quase transparente com borda fina brilhante e sombra suave
+   Usado por: index.html (liquid.css), panoramas.html (panoramas.css) e a visita 360° (tour360.css).
+   ========================================================================== */
+:root {
+  --lg-font: "SF Pro Display", "SF Pro Text", "SF Pro Icons", -apple-system, BlinkMacSystemFont, "Inter",
+    "Segoe UI Variable Display", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --lg-surface: #d5d8e1;            /* fundo lavanda-cinza da referência */
+  --lg-ink: #1d1d1f;
+  --lg-ink-2: #515154;
+  --lg-ink-3: #6e6e73;
+  --lg-nav: rgba(51, 51, 54, 0.84); /* barra global escura */
+  --lg-nav-ink: #f5f5f7;
+
+  --lg-blue: #0071e3;
+  --lg-blue-hi: #0a84ff;
+  --lg-green: #34c759;
+  --lg-green-ink: #1f8a3c;
+  --lg-yellow: #ffcc00;
+  --lg-red: #ff3b30;
+  --lg-gray: #8e8e93;
+
+  --lg-glass: rgba(238, 240, 247, 0.76);
+  --lg-glass-strong: rgba(246, 247, 251, 0.94);
+  --lg-fill: rgba(29, 29, 31, 0.06);
+  --lg-fill-2: rgba(29, 29, 31, 0.11);
+  --lg-line: rgba(29, 29, 31, 0.12);
+
+  --lg-sheen: linear-gradient(140deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0) 46%);
+  --lg-spec: inset 0 1px 0 rgba(255, 255, 255, 0.95), inset 0 -1px 0 rgba(255, 255, 255, 0.45),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55);
+  --lg-shadow: 0 20px 50px rgba(20, 24, 40, 0.3), 0 2px 8px rgba(20, 24, 40, 0.14);
+  --lg-shadow-sm: 0 6px 18px rgba(20, 24, 40, 0.24);
+  --lg-blur: blur(24px) saturate(180%);
+
+  --lg-r-sm: 12px;
+  --lg-r-md: 18px;
+  --lg-r-lg: 24px;
+  --lg-r-xl: 30px;
+  --lg-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  --nav-h: 52px;   /* altura da barra superior */
+  --dock-h: 78px;  /* espaço reservado para a dock inferior */
+}

@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Biblioteca 360° · Imobiliária Harness</title>
+<link rel="icon" type="image/png" href="assets/brand/logo-harness-icon.png?v=1">
+<link rel="stylesheet" href="tokens.css?v=lg1">
+<link rel="stylesheet" href="tour360.css?v=lg2">
+<link rel="stylesheet" href="panoramas.css?v=lg1">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<header class="lib-nav">
+  <div class="lib-nav-in">
+    <a class="lib-title" href="index.html" title="Voltar à maquete"><img class="lib-logo" src="assets/brand/logo-harness.webp?v=1" alt="Imobiliária Harness" width="960" height="551"><span>Biblioteca 360°</span><small>‹ Maquete</small></a>
+    <nav class="lib-cats" aria-label="Tipo de espaço">
+      <button type="button" data-cat="" aria-pressed="true">Todos</button>
+      <button type="button" data-cat="AP" aria-pressed="false">Apartamentos</button>
+      <button type="button" data-cat="CS" aria-pressed="false">Casas térreas</button>
+      <button type="button" data-cat="COMUM" aria-pressed="false">Áreas comuns</button>
+    </nav>
+  </div>
+</header>
+
+<section class="lib-hero">
+  <div class="shapes" aria-hidden="true">
+    <i class="sh sh-toggle"><b></b></i>
+    <i class="sh sh-slider"><b></b></i>
+    <i class="sh sh-rainbow"><b></b></i>
+    <i class="sh sh-plus"></i>
+    <i class="sh sh-card"></i>
+  </div>
+  <div class="hero-copy">
+    <h1>Explore cada espaço.</h1>
+    <p>Escolha uma variação e entre nos ambientes. Arraste para olhar em 360° e use os pontos de passagem para continuar a visita.</p>
+    <p class="count" id="count"></p>
+    <label class="search"><input id="filter" type="search" placeholder="Busque por AP-01, suíte, piscina…" aria-label="Buscar ambiente ou variação" autocomplete="off"></label>
+  </div>
+</section>
+
+<main class="lib-main" id="library-wrap">
+  <div id="library"></div>
+  <p class="note">Imagens conceituais geradas a partir das plantas e referências do projeto.</p>
+</main>
+
+<script type="module">
+import {TOUR_CATALOG} from './src/tour360Catalogo.js';
+import {Tour360} from './src/tour360.js';
+
+const tour = new Tour360(TOUR_CATALOG);
+window.tour360 = tour;
+
+const filter = document.querySelector('#filter');
+const library = document.querySelector('#library');
+const buttons = [...document.querySelectorAll('.lib-cats button')];
+const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const h = (tag, cls, text) => { const el = document.createElement(tag); if (cls) el.className = cls; if (text != null) el.textContent = text; return el; };
+let cat = '';
+
+const ids = Object.keys(TOUR_CATALOG);
+const total = Object.values(TOUR_CATALOG).reduce((n, p) => n + p.rooms.length, 0);
+document.querySelector('#count').textContent =
+  `${total} panoramas · ${ids.filter(k => k.startsWith('AP')).length} variações de apartamentos · ${ids.filter(k => k.startsWith('CS')).length} casas`;
+
+function render() {
+  library.replaceChildren();
+  const query = norm(filter.value.trim());
+  let shown = 0;
+  for (const [id, prop] of Object.entries(TOUR_CATALOG)) {
+    if (cat && !id.startsWith(cat)) continue;
+    const rooms = prop.rooms.filter(r => norm(prop.name + ' ' + r.name).includes(query));
+    if (!rooms.length) continue;
+    shown += rooms.length;
+    const group = h('section', 'panorama-group');
+    group.append(h('h2', '', prop.name));
+    const grid = h('div', 'panorama-grid');
+    group.append(grid);
+    for (const room of rooms) {
+      const code = (id + '-' + room.id).toUpperCase().replaceAll('_', '-');
+      const card = h('article', 'panorama-card');
+      const open = h('button', 'pc-open');
+      open.type = 'button';
+      open.setAttribute('aria-label', `Explorar ${prop.name}: ${room.name} em 360 graus`);
+      const img = new Image();
+      img.src = room.src; img.loading = 'lazy'; img.decoding = 'async'; img.alt = `Panorama de ${room.name}`;
+      const body = h('span', 'pc-body');
+      body.append(h('span', 'pc-name', room.name), h('span', 'pc-meta', `${prop.name} · IMAGEM ${code}`));
+      open.append(img, body);
+      open.addEventListener('click', () => tour.open(id, room.id));
+      const links = h('div', 'pc-links');
+      const visit = h('a', '', 'Visitar em 360° ›');
+      visit.href = '#'; visit.addEventListener('click', e => { e.preventDefault(); tour.open(id, room.id); });
+      const down = h('a', '', 'Baixar panorama');
+      down.href = room.original || room.src; down.download = code + '.png';
+      const review = h('a', '', 'Baixar com identificação');
+      review.href = './assets/panoramas/revisao/' + code + '.png'; review.download = code + '-REVISAO.png';
+      links.append(visit, down, review);
+      card.append(open, links);
+      grid.append(card);
+    }
+    library.append(group);
+  }
+  if (!shown) library.append(h('p', 'empty', 'Nenhum ambiente encontrado. Tente outro nome.'));
+}
+
+filter.addEventListener('input', render);
+buttons.forEach(b => b.addEventListener('click', () => {
+  cat = b.dataset.cat;
+  buttons.forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  render();
+}));
+render();
+</script>
+</body>
+</html>

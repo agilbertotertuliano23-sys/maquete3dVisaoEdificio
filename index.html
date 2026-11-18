@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Imobiliária Harness — Maquete Interativa do Empreendimento</title>
+  <link rel="icon" type="image/png" href="assets/brand/logo-harness-icon.png?v=1">
+  <link rel="stylesheet" href="tokens.css?v=lg1">
+  <link rel="stylesheet" href="styles.css?v=sv7">
+  <link rel="stylesheet" href="compact.css?v=sv7">
+  <link rel="stylesheet" href="liquid.css?v=lg1">
+  <link rel="stylesheet" href="tour360.css?v=lg2">
+  <link rel="stylesheet" href="mobile.css?v=m1">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+
+  <!-- ====================================================================
+       BARRA SUPERIOR (HEADER ILUSÃO DIGITAL STUDIO 3D)
+       ==================================================================== -->
+  <header class="id-header" id="id-header">
+    <div class="id-brand" id="btn-brand-home" title="Voltar à vista inicial">
+      <img class="id-logo-img" src="assets/brand/logo-harness.webp?v=1" alt="Imobiliária Harness" width="960" height="551" decoding="async">
+    </div>
+
+    <!-- Vistas, ferramentas e atalhos (compacto) -->
+    <div class="id-header-context" id="header-context">
+      <div class="context-badge" id="active-mode-badge" hidden>
+        <span class="dot-live"></span>
+        <span id="active-mode-label">Maquete 3D</span>
+      </div>
+
+      <div class="camera-presets-bar seg" aria-label="Câmeras">
+        <button class="header-tool-btn active" id="btn-cam-aerea" title="Vista aérea 3D">Aérea</button>
+        <button class="header-tool-btn" id="btn-cam-frontal" title="Fachada frontal">Fachada</button>
+        <button class="header-tool-btn" id="btn-cam-planta" title="Planta baixa geral com legenda 1–7">Planta geral</button>
+      </div>
+
+      <div class="header-actions">
+        <button class="header-tool-btn cta" id="btn-tour360" title="Entrar nos ambientes e navegar em 360 graus"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12c2.5 2.2 5.2 3.2 8.5 3.2s6-1 8.5-3.2"/><path d="M12 3c2.2 2.6 3.2 5.4 3.2 9s-1 6.4-3.2 9c-2.2-2.6-3.2-5.4-3.2-9s1-6.4 3.2-9z"/></svg> <span>Visita 360°</span></button>
+        <button class="header-tool-btn" id="btn-open-search-top" title="Buscar unidades"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg> <span>Buscar</span></button>
+      </div>
+    </div>
+
+    <!-- Navegação direita ("Filme" | "Fachada Interativa") -->
+    <nav class="id-header-nav" aria-label="Modos principais">
+      <button class="id-nav-link" id="nav-filme" data-topmode="filme">Filme</button>
+      <button class="id-nav-link active" id="nav-fachada" data-topmode="fachada">Fachada Interativa</button>
+    </nav>
+  </header>
+
+  <!-- ====================================================================
+       PALCO PRINCIPAL (VIEWPORT 3D + OVERLAYS)
+       ==================================================================== -->
+  <main class="id-stage" id="id-stage">
+
+    <!-- WebGL 3D Canvas -->
+    <div id="canvas-container" aria-label="Maquete 3D Interativa do Empreendimento"></div>
+    <div id="model-loading" class="model-loading" hidden>Carregando maquete 3D… <b id="model-loading-pct">100%</b></div>
+
+    <!-- Container de Rótulos 3D Flutuantes (Torres, Setores 1-7 da Planta Baixa e POIs) -->
+    <div id="labels-3d-container" class="labels-3d-container"></div>
+
+    <!-- Tooltip rápido de hover sobre unidades 3D -->
+    <div id="unit-hover-tooltip" class="unit-hover-tooltip" hidden>D-054</div>
+
+    <!-- ====================================================================
+         PAINEL EDITORIAL DIREITO ("Contemple o novo.")
+         ==================================================================== -->
+    <aside class="editorial-panel" id="editorial-panel" hidden>
+      <div class="editorial-inner">
+        <h1 class="editorial-title">Contemple<br>o novo.</h1>
+        <div class="editorial-copy">
+          <p>Contemple o horizonte, o sol nascendo, as crianças brincando...<br>Contemple a vida se aconchegando.</p>
+          <p>Contemple os amigos, a família, as paixões.<br>Este é o seu melhor momento!<br>Contemple suas realizações.</p>
+          <p>Contemple um novo dia, a cada dia! Talvez você desça a um restaurante, talvez você faça compras ou mesmo tome um café...<br>O que importa são os privilégios que há para você contemplar!</p>
+          <p>Trabalhar, morar, divertir, descansar, comprar...<br>Contemple todo o complexo - este será o seu novo universo!</p>
+        </div>
+        <div class="editorial-actions">
+          <button class="btn-editorial-explore" id="btn-enter-interactive">
+            Explorar Fachada Interativa 3D →
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         CONTROLE LATERAL DO DESMONTE INTERATIVO (SELETOR DE TORRE, PAVIMENTO E SETORES)
+         ==================================================================== -->
+    <aside class="desmonte-panel" id="desmonte-panel">
+      <div class="desmonte-header">
+        <div>
+          <span class="desmonte-kicker">DESMONTE INTERATIVO</span>
+          <h3 class="desmonte-title" id="desmonte-tower-name">Todas as Torres</h3>
+        </div>
+        <button class="btn-reset-cut" id="btn-reset-cut" title="Restaurar todos os andares">Restaurar</button>
+      </div>
+
+      <div class="tower-selector-grid" id="tower-selector-grid" title="Clique numa torre na maquete ou escolha aqui">
+        <button class="tower-chip active" data-tower="ALL">Todas</button>
+        <button class="tower-chip" data-tower="A">A</button>
+        <button class="tower-chip" data-tower="B">B</button>
+        <button class="tower-chip" data-tower="C">C</button>
+        <button class="tower-chip" data-tower="D">D</button>
+        <button class="tower-chip" data-tower="E">E</button>
+      </div>
+
+      <div class="floor-slider-box" id="floor-slider-box">
+        <div class="floor-slider-row">
+          <span>Andar</span>
+          <strong id="floor-cut-label">Cobertura (Completo)</strong>
+        </div>
+        <input type="range" id="floor-cut-slider" min="1" max="19" value="19" step="1">
+        <div class="floor-quick-btns">
+          <button class="floor-preset-btn" data-floor="14" data-tower="A" title="14º andar da Torre A">A · 14º</button>
+          <button class="floor-preset-btn" data-floor="10" data-tower="B" title="10º andar da Torre B">B · 10º</button>
+          <button class="floor-preset-btn" data-floor="6" data-tower="D" title="6º andar da Torre D">D · 6º</button>
+          <button class="floor-preset-btn" data-floor="19" data-tower="ALL" title="Torres montadas">Montado</button>
+        </div>
+      </div>
+
+      <details class="sector-quick-box">
+        <summary>Setores do condomínio · 3D e 360°</summary>
+        <div class="sector-mini-list" id="sector-mini-list"></div>
+      </details>
+    </aside>
+
+    <!-- ====================================================================
+         PAINEL DO APARTAMENTO: 4 aptos do andar, planta e recortes dos cômodos
+         ==================================================================== -->
+    <aside class="apt-panel" id="apt-panel" hidden>
+      <div class="apt-head">
+        <div>
+          <span class="desmonte-kicker" id="apt-kicker">APARTAMENTOS</span>
+          <strong class="apt-title" id="apt-title">—</strong>
+          <small class="apt-sub" id="apt-sub"></small>
+        </div>
+        <button class="apt-close" id="apt-close" aria-label="Fechar painel do apartamento">✕</button>
+      </div>
+      <div class="apt-tabs" id="apt-tabs"></div>
+      <figure class="apt-main">
+        <img id="apt-main-img" alt="" decoding="async">
+        <figcaption id="apt-main-cap"></figcaption>
+      </figure>
+      <div class="apt-label"><span id="apt-label-title">Ambientes</span><small>Toque numa foto · <b>360°</b> abre a visita</small></div>
+      <div class="apt-thumbs" id="apt-thumbs"></div>
+      <button class="tour-entry" id="apt-tour360">◎ Entrar neste apartamento em 360°</button>
+      <button class="apt-open" id="apt-open">Ver ficha da unidade →</button>
+    </aside>
+
+    <!-- Rótulos clicáveis sobre os apartamentos do andar cortado -->
+    <div class="apt-tags-3d" id="apt-tags-3d"></div>
+
+    <!-- ====================================================================
+         PAINEL LATERAL DIREITO DA PLANTA BAIXA GERAL (FIEL À PRANCHA 1!)
+         Contém: Legenda 1–7, Torres (Planta Tipo) e Dados do Empreendimento
+         ==================================================================== -->
+    <aside class="planta-geral-sidebar" id="planta-geral-sidebar" hidden>
+      <div class="pg-title-banner">
+        <div>
+          <h2>Planta Baixa Geral</h2>
+          <small>Condomínio Residencial e Aluguel • 200,00 m × 140,00 m</small>
+        </div>
+        <button class="pg-close-btn" id="btn-close-planta-sidebar" title="Voltar à Vista Aérea 3D">✕</button>
+      </div>
+
+      <!-- Bloco 1: Legenda (1 a 7) -->
+      <div class="pg-card">
+        <div class="pg-card-head">Legenda (Clique para focar em 3D)</div>
+        <div class="pg-legend-list" id="pg-legend-list"></div>
+      </div>
+
+      <!-- Bloco 2: Torres (Planta Tipo) -->
+      <div class="pg-card">
+        <div class="pg-card-head">Torres (Planta Tipo — 4 un/pav)</div>
+        <div class="pg-planta-tipo-row">
+          <canvas id="pg-mini-planta-canvas" width="220" height="190"></canvas>
+          <div class="pg-room-swatches">
+            <div class="pg-swatch-item"><span style="background:#c9a679"></span>Suíte (com banheiro)</div>
+            <div class="pg-swatch-item"><span style="background:#b89466"></span>Dormitório</div>
+            <div class="pg-swatch-item"><span style="background:#b8c7d1"></span>Banheiro Social</div>
+            <div class="pg-swatch-item"><span style="background:#dfd3c3"></span>Sala de Estar/Jantar</div>
+            <div class="pg-swatch-item"><span style="background:#c7beb5"></span>Cozinha/Serviço</div>
+            <div class="pg-swatch-item"><span style="background:#e5dec9"></span>Varanda Gourmet</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloco 3: Dados do Empreendimento -->
+      <div class="pg-card">
+        <div class="pg-card-head">Dados do Empreendimento</div>
+        <div class="pg-dados-list" id="pg-dados-list"></div>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         LEGENDA E ATALHOS DO MODO UNIDADES DISPONÍVEIS
+         ==================================================================== -->
+    <aside class="availability-hud" id="availability-hud" hidden>
+      <div class="avail-legend">
+        <div class="legend-item">
+          <span class="legend-swatch swatch-disponivel"></span>
+          <span>Disponível (<b id="count-disp">180</b>)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-swatch swatch-reservado"></span>
+          <span>Reservado (<b id="count-res">62</b>)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-swatch swatch-vendido"></span>
+          <span>Vendido (<b id="count-vend">48</b>)</span>
+        </div>
+      </div>
+      <div class="avail-actions">
+        <button class="btn-QuickUnit" data-unit-id="D-054" title="Abrir card da Unidade D-054 (Torre Média)">
+          Ver D-054
+        </button>
+        <button class="btn-QuickUnit" data-unit-id="A-181" title="Abrir card da Unidade A-181 (Torre Alta)">
+          Ver A-181
+        </button>
+        <button class="btn-QuickUnit" data-unit-id="CASA-01" title="Abrir card da Casa 01 (Térrea c/ Quintal)">
+          Ver CASA-01
+        </button>
+        <button class="btn-open-filter-modal" id="btn-open-filter-hud">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg> Buscar unidades
+        </button>
+      </div>
+    </aside>
+
+    <!-- ====================================================================
+         DOCK DE NAVEGAÇÃO INFERIOR
+         ==================================================================== -->
+    <nav class="bottom-pill-dock" id="bottom-pill-dock" aria-label="Ferramentas da Maquete">
+      <button class="pill-dock-btn active" id="btn-mode-desmonte" data-mode="desmonte" aria-label="Desmonte" title="Desmonte interativo"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l9 4.5-9 4.5-9-4.5L12 3z"/><path d="M3 12l9 4.5 9-4.5"/><path d="M3 16.5L12 21l9-4.5"/></svg><span>Desmonte</span></button>
+      <button class="pill-dock-btn" id="btn-mode-planta" data-mode="planta" aria-label="Planta geral" title="Planta baixa geral"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="2"/><path d="M3.5 10h8M11.5 10v10.5M11.5 14.5h9"/></svg><span>Planta geral</span></button>
+      <button class="pill-dock-btn" id="btn-mode-localizacao" data-mode="localizacao" aria-label="Localização" title="Localização e entorno"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.4"/></svg><span>Localização</span></button>
+      <button class="pill-dock-btn" id="btn-mode-unidades" data-mode="unidades" aria-label="Unidades" title="Unidades disponíveis"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5V8.5l8-5 8 5v12"/><path d="M9 20.5v-6h6v6"/></svg><span>Unidades</span></button>
+      <button class="pill-dock-btn" id="btn-open-streetview" aria-label="Street View" title="Google Street View à volta do prédio (Vila Mariana, SP)"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3.5 12c2.5 2.2 5.2 3.2 8.5 3.2s6-1 8.5-3.2"/><path d="M12 3c2.2 2.6 3.2 5.4 3.2 9s-1 6.4-3.2 9c-2.2-2.6-3.2-5.4-3.2-9s1-6.4 3.2-9z"/></svg><span>Street View</span></button>
+    </nav>
+
+    <!-- ====================================================================
+         MODAL DE SINCRONIZAÇÃO ("Atualizando disponibilidade")
+         ==================================================================== -->
+    <div class="sync-toast-overlay" id="sync-toast-overlay" hidden>
+      <div class="sync-toast-card">
+        <div class="sync-spinner" aria-hidden="true"></div>
+        <div class="sync-title">Atualizando disponibilidade</div>
+        <div class="sync-sub" id="sync-sub-text">Sincronizando 120/290</div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         MODAL DO CATÁLOGO DE PAISAGISMO (FIEL À PRANCHA 2)
+         ==================================================================== -->
+    <div class="arch-modal-backdrop" id="paisagismo-modal-backdrop" hidden>
+      <div class="arch-modal" role="dialog" aria-labelledby="paisagismo-modal-title">
+        <div class="arch-modal-head">
+          <div>
+            <span class="desmonte-kicker">PROJETO BOTÂNICO & ILUMINAÇÃO CÊNICA</span>
+            <h2 id="paisagismo-modal-title">Paisagismo do Empreendimento — Árvores, Palmeiras e Maciços</h2>
+          </div>
+          <button class="search-modal-close" id="btn-close-paisagismo-modal">✕</button>
+        </div>
+        <div class="arch-modal-body">
+          <div class="trees-showcase-grid" id="trees-showcase-grid"></div>
+          <div class="shrubs-section-title">Arbustos e Maciços (Complementares)</div>
+          <div class="shrubs-showcase-grid" id="shrubs-showcase-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         MODAL DA FICHA TÉCNICA, TIPOLOGIAS, ESTRUTURA E MATERIAIS (PRANCHA 5)
+         ==================================================================== -->
+    <div class="arch-modal-backdrop" id="ficha-modal-backdrop" hidden>
+      <div class="arch-modal" role="dialog" aria-labelledby="ficha-modal-title">
+        <div class="arch-modal-head">
+          <div>
+            <span class="desmonte-kicker">ESPECIFICAÇÕES ARQUITETÔNICAS & CONSTRUTIVAS</span>
+            <h2 id="ficha-modal-title">Tipologias, Áreas de Lazer, Estrutura Construtiva e Acabamentos</h2>
+          </div>
+          <button class="search-modal-close" id="btn-close-ficha-modal">✕</button>
+        </div>
+        <div class="arch-modal-body">
+          <!-- Linha 1: As 3 Tipologias Principais -->
+          <div class="typologies-grid-3">
+            <div class="typo-sheet-card">
+              <div class="typo-sheet-head">
+                <span class="typo-badge">🏢 Torre Residencial (Torres A, B e C)</span>
+                <small>Apartamentos / Suítes • 15 a 18 Pavimentos (≈ 60 a 72 m altura)</small>
+              </div>
+              <div class="typo-specs-list">
+                <div><strong>Planta Tipo:</strong> 4 unidades/pavimento (Planta em H com ventilação cruzada)</div>
+                <div><strong>Área Privativa:</strong> 110,00 m² a 161,34 m² (3 a 4 Quartos / Suítes)</div>
+                <div><strong>Destaques:</strong> Suíte Master c/ closet, Sala Integrada Estar/Jantar e Varanda Gourmet (6 a 12 m²)</div>
+                <div><strong>Dimensões Base:</strong> Largura ≈ 24,00–28,00 m</div>
+              </div>
+              <button class="btn-focus-3d-sheet" data-focus-tower="A">Focar Torre Alta em 3D →</button>
+            </div>
+
+            <div class="typo-sheet-card">
+              <div class="typo-sheet-head">
+                <span class="typo-badge">🏢 Torre Média (Torres D e E)</span>
+                <small>Apartamentos Compactos / Suítes • 10 Pavimentos (≈ 30 a 48 m altura)</small>
+              </div>
+              <div class="typo-specs-list">
+                <div><strong>Planta Tipo:</strong> 4 unidades/pavimento voltadas para a Piscina Central</div>
+                <div><strong>Área Privativa:</strong> 70,00 m² a 110,00 m² (2 a 3 Quartos c/ Suíte)</div>
+                <div><strong>Destaques:</strong> Estar/Jantar integrados, Cozinha Americana e Varanda com guarda-corpo em vidro</div>
+                <div><strong>Dimensões Base:</strong> Largura ≈ 20,00–24,00 m</div>
+              </div>
+              <button class="btn-focus-3d-sheet" data-focus-tower="D">Focar Torre Média em 3D →</button>
+            </div>
+
+            <div class="typo-sheet-card">
+              <div class="typo-sheet-head">
+                <span class="typo-badge">🏡 Casas para Aluguel (Unidades 01 a 06)</span>
+                <small>Unidades Térreas com Quintal Privativo • Fachada ≈ 7,00–10,00 m</small>
+              </div>
+              <div class="typo-specs-list">
+                <div><strong>Área Construída:</strong> 48,00 m² a 72,00 m² • <strong>Terreno (Lote):</strong> 125 a 200 m²</div>
+                <div><strong>Programa:</strong> 2 a 3 Quartos (1 Suíte), Banheiro Social, Sala/Jantar e Cozinha</div>
+                <div><strong>Destaques:</strong> Entrada independente, jardim frontal com gradil, arandelas e Quintal Privativo</div>
+                <div><strong>Altura:</strong> Platibanda contemporânea ≈ 2,20–4,00 m</div>
+              </div>
+              <button class="btn-focus-3d-sheet" data-focus-sector="casas_aluguel">Focar Casas Térreas em 3D →</button>
+            </div>
+          </div>
+
+          <!-- Linha 2: Lazer & Áreas Comuns -->
+          <div class="ficha-amenities-row">
+            <div class="amenity-mini-card" data-focus-sector="salao_festas">
+              <strong>🥂 Espaço Gourmet / Salão de Festas</strong>
+              <p>Pavilhão envidraçado com pé-direito duplo, mesas de banquete, ilha gourmet e terraço externo com ombrelones.</p>
+            </div>
+            <div class="amenity-mini-card" data-focus-sector="academia_ar_livre">
+              <strong>🏋️ Academia Coberta & Ao Ar Livre</strong>
+              <p>Fitness center envidraçado mais praça de ginástica ao ar livre integrada ao pergolado de madeira nobre.</p>
+            </div>
+            <div class="amenity-mini-card" data-focus-sector="piscina">
+              <strong>🏊 Piscina Central Resort</strong>
+              <p>Piscina adulto e infantil revestida em pastilha azul-celeste com iluminação LED, deck de madeira e solarium.</p>
+            </div>
+            <div class="amenity-mini-card" data-focus-sector="quadra">
+              <strong>🏀 Quadra Poliesportiva Oficial</strong>
+              <p>Quadra em terracota com rede de tênis, marcações brancas, tabelas de basquete e alambrado alto.</p>
+            </div>
+          </div>
+
+          <!-- Linha 3: Estrutura Construtiva & Acabamentos e Materiais -->
+          <div class="ficha-bottom-row">
+            <div class="ficha-struct-box">
+              <h4>Estrutura Construtiva</h4>
+              <ul>
+                <li><strong>Laje de Concreto Armado:</strong> Isolamento acústico e térmico entre pavimentos</li>
+                <li><strong>Alvenaria Estrutural / Bloco Cerâmico:</strong> Conforto termoacústico superior</li>
+                <li><strong>Revestimento Interno:</strong> Gesso liso desempenado e pintura acrílica premium</li>
+                <li><strong>Revestimento Externo:</strong> Textura projetada hidrofugante, ACM, madeira ripada e porcelanato</li>
+              </ul>
+            </div>
+            <div class="ficha-materials-box">
+              <h4>Acabamentos e Materiais (Padrão)</h4>
+              <div class="materials-swatches-grid">
+                <div class="mat-swatch"><span style="background:linear-gradient(135deg,#f5ece0,#dfd3c3)"></span><strong>Porcelanato</strong><small>Interno</small></div>
+                <div class="mat-swatch"><span style="background:linear-gradient(135deg,#cbd5e1,#94a3b8)"></span><strong>Cerâmica</strong><small>Áreas molhadas</small></div>
+                <div class="mat-swatch"><span style="background:linear-gradient(135deg,#52525b,#27272a)"></span><strong>Granito</strong><small>Bancadas</small></div>
+                <div class="mat-swatch"><span style="background:linear-gradient(135deg,#bae6fd,#38bdf8)"></span><strong>Vidro</strong><small>Guarda-corpo</small></div>
+                <div class="mat-swatch"><span style="background:linear-gradient(135deg,#3f3f46,#18181b)"></span><strong>Alumínio</strong><small>Esquadrias</small></div>
+                <div class="mat-swatch"><span style="background:linear-gradient(135deg,#b47b4e,#7c4a27)"></span><strong>Madeira</strong><small>Portas & Ripados</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         CARD FLUTUANTE DE DETALHES DA UNIDADE
+         ==================================================================== -->
+    <div class="unit-popup-backdrop" id="unit-popup-backdrop" hidden>
+      <div class="unit-popup-card" id="unit-popup-card" role="dialog" aria-labelledby="up-unit-code">
+        <div class="unit-popup-header">
+          <div class="unit-popup-price-col">
+            <div class="unit-popup-price" id="up-price">Preço: R$ 573.400</div>
+            <div class="unit-popup-code" id="up-unit-code">UNIDADE: D-054</div>
+          </div>
+
+          <div class="unit-popup-specs">
+            <div class="spec-box">
+              <strong id="up-dorms">2</strong>
+              <small>Dorms</small>
+            </div>
+            <div class="spec-box">
+              <strong id="up-suites">1</strong>
+              <small>Suítes</small>
+            </div>
+            <div class="spec-box">
+              <strong id="up-vagas">1</strong>
+              <small>Vagas</small>
+            </div>
+            <div class="spec-box">
+              <strong id="up-area">74,21</strong>
+              <small>m²</small>
+            </div>
+          </div>
+
+          <button class="unit-popup-close" id="btn-close-unit-popup" aria-label="Fechar card da unidade">✕</button>
+        </div>
+
+        <div class="unit-popup-body">
+          <div class="unit-popup-loading" id="unit-popup-loading" hidden>
+            <div class="sync-spinner"></div>
+            <span>Carregando informações da unidade...</span>
+          </div>
+
+          <div class="unit-popup-Visual" id="unit-popup-visual">
+            <span class="unit-status-pill status-disponivel" id="up-status-badge">DISPONÍVEL</span>
+
+            <div class="unit-view-tabs">
+              <button class="u-tab active" id="tab-view-render" data-uview="render">Ambientes</button>
+              <button class="u-tab" id="tab-view-planta" data-uview="planta">Planta</button>
+              <button class="u-tab" id="tab-view-3d" data-uview="foco3d">Ver no andar 3D</button>
+            </div>
+
+            <img id="up-main-img" class="up-main-img" alt="" decoding="async">
+            <div class="up-thumbs" id="up-thumbs"></div>
+            <button class="tour-entry" id="unit-tour360">◎ Explorar os ambientes em 360°</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         MODAL "Buscar unidades"
+         ==================================================================== -->
+    <div class="search-modal-backdrop" id="search-modal-backdrop" hidden>
+      <div class="search-modal" role="dialog" aria-labelledby="search-modal-title">
+        <div class="search-modal-head">
+          <div>
+            <h2 id="search-modal-title">Buscar unidades</h2>
+            <p class="search-modal-sub">Encontre o apartamento ou casa térrea ideal por características</p>
+          </div>
+          <button class="search-modal-close" id="btn-close-search-modal" aria-label="Fechar busca">✕</button>
+        </div>
+
+        <div class="search-filters-wrap">
+          <div class="filter-field full-width">
+            <label for="f-unit-query">BUSCAR UNIDADE ESPECÍFICA</label>
+            <div class="search-input-box">
+              <svg class="search-ic" viewBox="0 0 20 20" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="8.5" cy="8.5" r="5.5"/><path d="M13 13l4 4"/>
+              </svg>
+              <input type="text" id="f-unit-query" placeholder="Ex.: D-054, A-181, CASA-01" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="filter-row-5">
+            <div class="filter-field">
+              <label for="f-torre">TORRE / SETOR</label>
+              <select id="f-torre">
+                <option value="ALL">Todas</option>
+                <option value="A">Torre A (Alta)</option>
+                <option value="B">Torre B (Central)</option>
+                <option value="C">Torre C (Alta)</option>
+                <option value="D">Torre D (Média)</option>
+                <option value="E">Torre E (Média)</option>
+                <option value="CASA">Casas Térreas (Aluguel)</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label for="f-status">STATUS</label>
+              <select id="f-status">
+                <option value="ALL">Todos</option>
+                <option value="disponivel">Disponível</option>
+                <option value="reservado">Reservado</option>
+                <option value="vendido">Vendido</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label for="f-dorms">DORMITÓRIOS</label>
+              <select id="f-dorms">
+                <option value="ALL">Todos</option>
+                <option value="2">2 dorms</option>
+                <option value="3">3 dorms</option>
+                <option value="4">4 dorms</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label for="f-suites">SUÍTES</label>
+              <select id="f-suites">
+                <option value="ALL">Todas</option>
+                <option value="1">1 suíte</option>
+                <option value="2">2 suítes</option>
+                <option value="3">3 suítes</option>
+                <option value="4">4 suítes</option>
+              </select>
+            </div>
+
+            <div class="filter-field">
+              <label for="f-vagas">VAGAS</label>
+              <select id="f-vagas">
+                <option value="ALL">Todas</option>
+                <option value="1">1 vaga</option>
+                <option value="2">2 vagas</option>
+                <option value="3">3 vagas</option>
+                <option value="4">4 vagas</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-row-area-price">
+            <div class="filter-field area-col">
+              <label for="f-area">TIPOLOGIA & ÁREA</label>
+              <select id="f-area">
+                <option value="ALL">Todas as tipologias</option>
+                <option value="53">48 a 72 m² (Casa Térrea c/ Quintal)</option>
+                <option value="74">70 a 110 m² (Torre Média — 2 e 3 Dorms)</option>
+                <option value="118">118 a 130 m² (Torre Alta — 3 Suítes)</option>
+                <option value="161">148 a 161 m² (Torre Alta — 4 Dorms / Suítes)</option>
+              </select>
+            </div>
+
+            <div class="filter-field price-col">
+              <label>PREÇO</label>
+              <div class="price-sub-row">
+                <div class="price-sub-field">
+                  <span class="sub-lbl">Valor de</span>
+                  <select id="f-price-min">
+                    <option value="0">Qualquer valor</option>
+                    <option value="500000">R$ 500.000</option>
+                    <option value="700000">R$ 700.000</option>
+                    <option value="900000">R$ 900.000</option>
+                    <option value="1000000">R$ 1.000.000</option>
+                  </select>
+                </div>
+                <div class="price-sub-field">
+                  <span class="sub-lbl">Valor até</span>
+                  <select id="f-price-max">
+                    <option value="99999999">Qualquer valor</option>
+                    <option value="700000">R$ 700.000</option>
+                    <option value="950000">R$ 950.000</option>
+                    <option value="1200000">R$ 1.200.000</option>
+                    <option value="2000000">R$ 2.000.000</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-actions-row">
+            <div class="filter-actions-left">
+              <button class="btn-clear-filters" id="btn-clear-filters">Limpar filtros</button>
+              <button class="btn-preset-1m" id="btn-preset-1m">
+                ⚡ Disponíveis Alto Padrão (≥ R$ 1 Milhão)
+              </button>
+            </div>
+            <div class="units-found-count" id="units-found-count">290 unidades encontradas</div>
+          </div>
+        </div>
+
+        <div class="search-results-container" id="search-results-container">
+          <div class="search-loading-box" id="search-loading-box" hidden>
+            <div class="sync-spinner"></div>
+            <strong>Atualizando disponibilidade</strong>
+            <small>Recebendo informações das unidades...</small>
+          </div>
+
+          <div class="search-results-grid" id="search-results-grid"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         MAPA REAL 3D DO ENTORNO (MODO LOCALIZAÇÃO) — OpenStreetMap + MapLibre
+         ==================================================================== -->
+    <div class="mapa-entorno" id="mapa-entorno" hidden>
+      <div id="mapa-canvas"></div>
+      <div class="mapa-card">
+        <strong>Mapa do entorno</strong>
+        <small>Vila Mariana, São Paulo • ruas e prédios reais (OpenStreetMap)</small>
+        <div class="mapa-botoes">
+          <button id="mapa-btn-todos" type="button">Ver todos os pontos</button>
+          <button id="mapa-btn-fotos" type="button" class="active" title="Linhas verdes = ruas com foto de rua; clique numa delas">Ruas com foto</button>
+          <button id="mapa-btn-3d" type="button">Ver maquete 3D</button>
+        </div>
+      </div>
+      <div class="mapa-status" id="mapa-status" hidden></div>
+    </div>
+
+    <div class="loc-3d-card" id="loc-3d-card" hidden>
+      <strong>Entorno 3D &amp; Raios de Distância</strong>
+      <small>Vila Mariana, São Paulo • Raios 500m, 1km e 2km</small>
+      <div class="mapa-botoes">
+        <button id="loc-btn-mapa" type="button">Mapa real (OSM)</button>
+        <button id="loc-btn-sv" type="button">Street View</button>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         VIEWER GOOGLE STREET VIEW 360°
+         ==================================================================== -->
+    <div class="streetview-overlay" id="streetview-overlay" hidden>
+      <div class="streetview-topbar">
+        <div class="sv-location-info">
+          <span class="sv-pegman-badge">🚶 Street View • Mapillary</span>
+          <div>
+            <strong id="sv-title">Entorno do empreendimento</strong>
+            <small id="sv-subtitle">Vila Mariana, São Paulo, SP</small>
+          </div>
+        </div>
+        <div class="sv-chips" id="sv-chips" aria-label="Pontos de vista à volta do prédio"></div>
+        <div class="sv-actions">
+          <a class="sv-btn-rotate" id="sv-open-maps" target="_blank" rel="noopener">Abrir no Google Maps ↗</a>
+          <button class="sv-btn-close" id="btn-close-streetview">← Voltar à maquete</button>
+        </div>
+      </div>
+
+      <div class="streetview-stage" id="streetview-stage">
+        <div id="sv-viewer" hidden></div>
+        <div class="sv-status" id="sv-status" hidden></div>
+
+        <div class="sv-key-box" id="sv-key-box" hidden>
+          <strong>Conectar ao Street View gratuito (Mapillary)</strong>
+          <p>Crie uma conta grátis em <b>mapillary.com</b>, abra <b>Configurações → Developers → Register application</b>
+             e copie o <b>Client Token</b> (começa com <code>MLY|</code>). Ele fica só neste navegador.</p>
+          <div class="sv-key-row">
+            <input id="sv-key-input" type="text" placeholder="Cole o Client Token (MLY|…)" autocomplete="off" spellcheck="false">
+            <button id="sv-key-save" class="sv-btn-close">Conectar</button>
+            <button id="sv-key-clear" class="sv-btn-rotate" type="button">Limpar</button>
+          </div>
+          <p class="sv-key-hint">Sem token, use <b>Abrir no Google Maps ↗</b> no topo: abre o mesmo ponto no Street View do Google.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         PLAYER DO VÍDEO ORIGINAL BAIXADO DO INSTAGRAM REEL
+         ==================================================================== -->
+    <div class="reel-modal-backdrop" id="reel-modal-backdrop" hidden>
+      <div class="reel-modal">
+        <div class="reel-modal-head">
+          <div>
+            <strong>Referências de navegação · @ilusaodigital</strong>
+            <select id="reference-video-select" aria-label="Escolher vídeo de referência">
+              <option value="video-referencia-reel-DcsvWRFI9YF.mp4" selected>Reels Navigo Web · DcsvWRFI9YF · Referência 3D</option>
+              <option value="reference/reel-Dd2FExNoS6Q.mp4">Reels enviado · Dd2FExNoS6Q · Fachada e ambientes</option>
+              <option value="video-referencia-reel.mp4">Vídeo que já estava na pasta · Maquete</option>
+            </select>
+          </div>
+          <div class="reel-head-actions">
+            <a class="btn-download-mp4" id="reference-video-download" href="video-referencia-reel-DcsvWRFI9YF.mp4" download>⬇ Baixar MP4</a>
+            <button class="reel-modal-close" id="btn-close-reel-modal">✕</button>
+          </div>
+        </div>
+        <div class="reel-video-wrap">
+          <video id="ref-video-player" src="video-referencia-reel-DcsvWRFI9YF.mp4" controls playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script type="module" src="./src/main.js"></script>
+  <script type="module" src="./src/tour360Bridge.js"></script>
+  <script type="module" src="./src/hud.js"></script>
+</body>
+</html>
