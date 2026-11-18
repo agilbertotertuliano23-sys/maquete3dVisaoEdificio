@@ -139,8 +139,41 @@ function avisoOrientacao() {
   atualizar();
 }
 
+// --------------------------------------------------------------------------
+// PAINEL DO DESMONTE RECOLHÍVEL: em telas pequenas ele ocupava boa parte da cena. Um botão no
+// cabeçalho do painel o recolhe (fica só o nome da torre) e abre de novo; a escolha dura a visita.
+// O scene3d já observa o tamanho dos painéis e reenquadra a maquete sozinho.
+// --------------------------------------------------------------------------
+const CHAVE_RECOLHIDO = 'maquete.desmonteRecolhido';
+
+function painelRecolhivel() {
+  const painel = document.getElementById('desmonte-panel');
+  const cabecalho = painel?.querySelector('.desmonte-header');
+  if (!painel || !cabecalho) return;
+
+  const botao = document.createElement('button');
+  botao.type = 'button';
+  botao.className = 'desmonte-recolher';
+  botao.innerHTML = '<svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>';
+
+  const aplicar = (recolhido) => {
+    painel.classList.toggle('is-recolhido', recolhido);
+    botao.setAttribute('aria-expanded', String(!recolhido));
+    botao.setAttribute('aria-label', recolhido ? 'Abrir os controles do desmonte' : 'Recolher os controles do desmonte');
+    botao.title = botao.getAttribute('aria-label');
+    try { sessionStorage.setItem(CHAVE_RECOLHIDO, recolhido ? '1' : '0'); } catch { /* sem armazenamento: só nesta tela */ }
+  };
+  botao.addEventListener('click', () => aplicar(!painel.classList.contains('is-recolhido')));
+  cabecalho.appendChild(botao);
+
+  let salvo = false;
+  try { salvo = sessionStorage.getItem(CHAVE_RECOLHIDO) === '1'; } catch { /* idem */ }
+  aplicar(salvo);
+}
+
 function iniciar() {
   montar();
+  painelRecolhivel();
   avisoOrientacao();
 }
 

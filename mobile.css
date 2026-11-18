@@ -169,3 +169,52 @@ button, .tower-chip, .floor-preset-btn, .apt-tab, summary { touch-action: manipu
 .aviso-giro-pular { background: transparent; color: rgba(245, 245, 247, 0.72); min-height: 40px; font-weight: 500; font-size: 14px; }
 .aviso-giro-dica { font-size: 12px; line-height: 1.4; color: rgba(245, 245, 247, 0.62); }
 @media (prefers-reduced-motion: reduce) { .aviso-giro-icone rect { animation: none; } }
+
+/* ---------- 8. Painéis COMPACTOS no celular deitado: prioridade à cena, tudo continua tocável ----------
+   O scene3d enquadra a maquete na área que sobra ao lado dos painéis; painel grande = maquete pequena.
+   Alvos de toque >= 30px e texto >= 10,5px: menor que isso deixa de ser usável. */
+@media (max-height: 520px) and (orientation: landscape) {
+  .desmonte-panel, .availability-hud { width: min(27vw, 228px); padding: 7px 8px; border-radius: 12px; }
+  .desmonte-header { margin-bottom: 6px; gap: 6px; }
+  .desmonte-kicker { display: none; }
+  .desmonte-title { font-size: 13px; margin: 0; line-height: 1.2; }
+  .btn-reset-cut { min-height: 28px; padding: 0 9px; font-size: 11px; }
+  .tower-selector-grid { gap: 3px; margin-bottom: 6px; grid-template-columns: 1.5fr repeat(5, 1fr); }
+  .tower-chip { min-height: 32px; font-size: 12px; }
+  .floor-slider-box { padding-top: 6px; }
+  .floor-slider-row { font-size: 11px; margin-bottom: 2px; }
+  #floor-cut-slider { height: 26px; margin-bottom: 4px; }
+  .floor-quick-btns { grid-template-columns: repeat(4, 1fr); gap: 3px; }
+  .floor-preset-btn { min-height: 32px; font-size: 10.5px; padding: 0 1px; }
+
+  .avail-legend { gap: 4px; margin-bottom: 6px; }
+  .legend-item { font-size: 10.5px; gap: 4px; }
+  .btn-QuickUnit { min-height: 30px; font-size: 11px; padding: 3px 6px; }
+  .btn-open-filter-modal { min-height: 34px; font-size: 12px; }
+
+  .apt-panel { width: min(33vw, 250px); padding: 7px 8px; }
+  .apt-tab { min-height: 30px; font-size: 11.5px; }
+  .apt-open, .tour-entry { min-height: 32px; font-size: 11.5px; }
+
+  .planta-geral-sidebar { width: min(30vw, 250px); }
+  .pg-title-banner h2 { font-size: 13px; }
+  .pg-title-banner small { display: none; }
+  .editorial-panel { width: min(38vw, 310px); }
+  .editorial-title { font-size: 22px; }
+  .editorial-copy { font-size: 11.5px; }
+}
+
+/* ---------- 9. Recolher os controles do desmonte (botão no cabeçalho do painel) ---------- */
+.desmonte-recolher { display: none; }
+@media (max-width: 900px), (max-height: 520px) {
+  .desmonte-recolher {
+    display: inline-grid; place-items: center; flex: none; width: 30px; height: 30px; padding: 0;
+    border: 0; border-radius: 50%; background: rgba(29, 29, 31, 0.08); color: inherit; cursor: pointer;
+  }
+  .desmonte-recolher .ic { width: 16px; height: 16px; transition: transform 0.2s ease; }
+  .desmonte-recolher[aria-expanded="false"] .ic { transform: rotate(180deg); }
+  /* recolhido: só o cabeçalho (nome da torre + restaurar + abrir), o resto da tela fica para a cena */
+  .desmonte-panel.is-recolhido > :not(.desmonte-header) { display: none; }
+  .desmonte-panel.is-recolhido .desmonte-header { margin-bottom: 0; }
+  .desmonte-panel.is-recolhido { width: auto; min-width: 150px; }
+}
