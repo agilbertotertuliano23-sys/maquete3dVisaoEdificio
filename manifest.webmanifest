@@ -1,0 +1,15 @@
+{
+  "name": "Maquete 3D Interativa — Imobiliária Harness",
+  "short_name": "Maquete 3D",
+  "description": "Maquete 3D interativa do empreendimento: desmonte por andar, plantas, unidades e visita 360°.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "landscape",
+  "background_color": "#1d1d1f",
+  "theme_color": "#333336",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/brand/logo-harness-icon.png", "sizes": "128x128", "type": "image/png", "purpose": "any" }
+  ]
+}

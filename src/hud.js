@@ -75,5 +75,74 @@ function montar() {
   requestAnimationFrame(quadro);
 }
 
-if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', montar);
-else montar();
+// --------------------------------------------------------------------------
+// ORIENTAÇÃO: como no reel, a maquete é pensada para o celular DEITADO (horizontal).
+// Em celular em pé aparece um aviso que pede para girar e, onde o navegador deixa (Android),
+// entra em tela cheia e trava na horizontal. No iPhone não existe trava: o aviso pede pra girar
+// à mão (e a rotação automática precisa estar liberada). Dá para ignorar e seguir em pé.
+// Não giramos a página por CSS de propósito: o toque e o raycast da cena 3D usam as coordenadas
+// da tela, e uma página girada quebraria o arrasto e o clique nas unidades.
+// --------------------------------------------------------------------------
+const CHAVE_EM_PE = 'maquete.seguirEmPe';
+
+function ehCelular() {
+  return matchMedia('(pointer: coarse)').matches && Math.min(screen.width, screen.height) <= 600;
+}
+const emPe = () => matchMedia('(orientation: portrait)').matches;
+const lido = () => { try { return sessionStorage.getItem(CHAVE_EM_PE) === '1'; } catch { return false; } };
+const gravar = () => { try { sessionStorage.setItem(CHAVE_EM_PE, '1'); } catch { /* modo privado: só vale nesta aba */ } };
+
+function avisoOrientacao() {
+  if (!ehCelular()) return;
+
+  const aviso = document.createElement('div');
+  aviso.className = 'aviso-giro';
+  aviso.hidden = true;
+  aviso.setAttribute('role', 'dialog');
+  aviso.setAttribute('aria-modal', 'true');
+  aviso.setAttribute('aria-label', 'Gire o celular para a horizontal');
+  aviso.innerHTML = `
+    <div class="aviso-giro-card">
+      <svg class="aviso-giro-icone" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <rect x="21" y="6" width="22" height="42" rx="4"/>
+        <path d="M30 41h4"/>
+        <path d="M10 54a24 24 0 0 0 44 0" class="aviso-giro-seta"/>
+        <path d="M54 54l-1-7-6 3"/>
+      </svg>
+      <strong>Gire o celular</strong>
+      <p>A maquete funciona melhor na <b>horizontal</b>, com o menu na lateral e a cena em tela cheia.</p>
+      <button type="button" class="aviso-giro-ok">Girar para horizontal</button>
+      <button type="button" class="aviso-giro-pular">Continuar em pé</button>
+      <small class="aviso-giro-dica" hidden>Se não girou sozinho, desative o bloqueio de rotação do celular e vire o aparelho.</small>
+    </div>`;
+  document.body.appendChild(aviso);
+
+  const dica = aviso.querySelector('.aviso-giro-dica');
+  const atualizar = () => { aviso.hidden = !(emPe() && !lido()); };
+
+  aviso.querySelector('.aviso-giro-ok').addEventListener('click', async () => {
+    try {
+      // tela cheia + trava só funcionam com um toque do usuário e só no Android/Chrome
+      if (!document.fullscreenElement && document.documentElement.requestFullscreen) {
+        await document.documentElement.requestFullscreen({ navigationUI: 'hide' });
+      }
+      await screen.orientation.lock('landscape');
+    } catch {
+      dica.hidden = false; // iPhone/Safari ou navegador sem trava: gira à mão
+    }
+    atualizar();
+  });
+  aviso.querySelector('.aviso-giro-pular').addEventListener('click', () => { gravar(); atualizar(); });
+
+  matchMedia('(orientation: portrait)').addEventListener('change', atualizar);
+  addEventListener('resize', atualizar);
+  atualizar();
+}
+
+function iniciar() {
+  montar();
+  avisoOrientacao();
+}
+
+if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', iniciar);
+else iniciar();
